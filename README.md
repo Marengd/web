@@ -19,7 +19,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 Danian Marengo
 
 #### Je startniveau:
-hier je startniveau (kies uit zwart, rood óf blauw)
+Rood, ik kan het wel. Maar doordat ik het weinig doe roest ik. Als het lukt is coderen stiekem wel leuk. 
 
 #### Je focus:
 hier je focus (kies uit responsive óf surface plane)
@@ -36,15 +36,15 @@ hier je focus (kies uit responsive óf surface plane)
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+https://www.twix.com/our-story
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+Explore Twix
+<img src="images/home.jpg" width="375px" alt="omschrijving van de pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+Our Story 
+<img src="images/our_story.jpg" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
