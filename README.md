@@ -22,7 +22,7 @@ Danian Marengo
 Rood, ik kan het wel. Maar doordat ik het weinig doe roest ik. Als het lukt is coderen stiekem wel leuk. 
 
 #### Je focus:
-hier je focus (kies uit responsive óf surface plane)
+Surface plane
  
 </details>
 
