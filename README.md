@@ -36,15 +36,15 @@ Surface plane
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-https://www.twix.com/our-story
+https://www.twix.com
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 Explore Twix
-<img src="images/home.jpg" width="375px" alt="omschrijving van de pagina">
+<img src="images/home.jpg" width="375px" alt="Homepagina van Twix website.">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 Our Story 
-<img src="images/our_story.jpg" width="375px" alt="omschrijving van de pagina">
+<img src="images/our_story.jpg" width="375px" alt="Our story pagina van Twix website.">
  
 </details>
 
