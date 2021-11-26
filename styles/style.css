@@ -1,5 +1,144 @@
 /* CSS Document */
 *, *::after, *::before {
   box-sizing:border-box;  
+
+  margin: 0;
+}
+
+/******************************/
+/* ALGEMENE CUSTOM PROPERTIES */
+/******************************/
+
+:root {
+	--white:#ffffff;
+	--black:#000000;
+
+
+	--button-background-color:#E42525;
+
+  ---dark-background-color:#490F00;
+  --background-color:#eaaa22;
+  --accent-background-color:#F9F1DB;
+
+  --overlay-background-color:#F4F4F4;
+  --overlay-background-color:#57BDF4;
+}
+
+
+
+
+
+/********************/
+/* ALGEMENE STIJLEN */
+/********************/
+
+body {
+  margin: 0;
+}
+
+/* Typografie */
+
+h1 {
+  font-family: arial;
+  font-size: 84px;
+}
+
+h2 {
+  font-family: arial;
+  font-size: 64px;
+  letter-spacing: 1.6px;
+  
+  line-height: 64px;
+  
+  color: var(--white);
+}
+
+h3 {
+  font-family: arial;
+  font-size: 24px;
+  letter-spacing: 1.6px;
+  
+  line-height: 26px;
+  
+  color: var(--dark-background-color);
+}
+
+h4 {
+  font-family: arial;
+  font-size: 16px;
+  letter-spacing: 1.6px;
+  
+  line-height: 26px;
+
+  text-transform: uppercase;
+  
+  color: var(---dark-background-color);
+}
+
+
+p {
+  font-family: arial;
+  font-size: 18px;
+  letter-spacing: 1.6px;
+  
+  line-height: 25px;
+  text-align: center;
+  
+  color: var(--dark-background-color);
+}
+
+
+/********************/
+/* */
+/********************/
+
+
+a {
+
+  padding: 20px 46px 20px 46px;
+
+  font-family: arial;
+  font-size: 16px;
+  
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1.6px;
+
+  color: var(--white);
+  background-color: var(--button-background-color);
+
+}
+
+header nav {
+  background-image: linear-gradient()
+
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+header nav li {
+  font-family: arial;
+  font-size: 18px;
+  letter-spacing: 1.6px;
+  
+  line-height: 18px;
+  
+  color: var(--dark-background-color);
+  
+  list-style-type: none;
+}
+
+header {
+  width: 100vw;
+  height: auto;
+
+}
+
+header img {
+  width: 100vw;
+  height: auto;
 }
 
