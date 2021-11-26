@@ -1,9 +1,9 @@
 /* CSS Document */
 *, *::after, *::before {
   box-sizing:border-box;  
-
-  margin: 0;
 }
+
+
 
 /******************************/
 /* ALGEMENE CUSTOM PROPERTIES */
@@ -11,16 +11,17 @@
 
 :root {
 	--white:#ffffff;
+  --grey:#F4F4F4;
 	--black:#000000;
 
 
 	--button-background-color:#E42525;
 
-  ---dark-background-color:#490F00;
+  --dark-background-color:#490F00;
   --background-color:#eaaa22;
-  --accent-background-color:#F9F1DB;
+  --accent-background-color:#f7eed2;
 
-  --overlay-background-color:#F4F4F4;
+
   --overlay-background-color:#57BDF4;
 }
 
@@ -33,30 +34,35 @@
 /********************/
 
 body {
-  margin: 0;
+  /* margin: 0; */
+
+  overflow-x:hidden;
+  background-color: #acacac;
 }
 
 /* Typografie */
 
+
 h1 {
   font-family: arial;
-  font-size: 84px;
+  font-size: 40px;
 }
 
 h2 {
   font-family: arial;
-  font-size: 64px;
+  font-size: 40px;
   letter-spacing: 1.6px;
   
-  line-height: 64px;
+  line-height: 40px;
   
   color: var(--white);
 }
 
 h3 {
   font-family: arial;
-  font-size: 24px;
+  font-size: 20px;
   letter-spacing: 1.6px;
+  text-transform: uppercase;
   
   line-height: 26px;
   
@@ -65,14 +71,14 @@ h3 {
 
 h4 {
   font-family: arial;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 1.6px;
   
   line-height: 26px;
 
   text-transform: uppercase;
   
-  color: var(---dark-background-color);
+  color: var(--white);
 }
 
 
@@ -99,6 +105,7 @@ a {
 
   font-family: arial;
   font-size: 16px;
+  font-weight: bold;
   
   text-transform: uppercase;
   text-decoration: none;
@@ -107,38 +114,97 @@ a {
   color: var(--white);
   background-color: var(--button-background-color);
 
+  border-radius: 30px;
+
 }
+
+
+/* header {
+} */
 
 header nav {
-  background-image: linear-gradient()
 
+
+  background-color: red;
 }
 
-header nav ul {
-  display: flex;
-  flex-direction: row;
+main section:first-of-type {
+  background-color: var(--white);
 }
 
-header nav li {
-  font-family: arial;
-  font-size: 18px;
-  letter-spacing: 1.6px;
-  
-  line-height: 18px;
-  
+
+
+
+
+main section:nth-of-type(2) {
+  background-color: var(--overlay-background-color);
+}
+
+
+
+
+
+main section:nth-of-type(3) {
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: var(--accent-background-color);
+}
+
+main section:nth-of-type(3) h2 {
+
   color: var(--dark-background-color);
+}
+
+main section:nth-of-type(3) article {
+  display: flex;
+  flex-direction: column;
   
-  list-style-type: none;
+  justify-content: center;
+  align-items: center;
 }
 
-header {
-  width: 100vw;
-  height: auto;
+
+
+
+/***********************************************************/
+/* Section 4, " Twix Cookies & Creme Cheesecake Mashup. " */
+/*********************************************************/
+
+main section:nth-of-type(4){
 
 }
 
-header img {
-  width: 100vw;
-  height: auto;
+
+
+
+
+/***********************************************/
+/* Section 5, " All the Twix you need Twice. " */
+/*********************************************/
+
+main section:nth-of-type(5) {
+
+  background-color: var(--accent-background-color);
 }
+
+main section:nth-of-type(5) h2 {
+  text-transform: uppercase;
+  text-align: center;
+
+  color: var(--dark-background-color);
+}
+
+main section:nth-of-type(5) article {
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
 
