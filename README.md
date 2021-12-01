@@ -72,31 +72,50 @@ Our Story
 
 ## Voortgang 1 (week 2)
 
-<details open>
+<details>
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+
+Op de afgelopen twee weken aan lesstof kan ik positief terugblikken. Ondanks dat ik het gevoel heb dat ik over een "oké" basis beschik
+om aan de slag te gaan met mij website, heb ik mij deze twee weken voorgenomen om mij bij de start te verdiepen in de oefeningen. Herhalen is namelijk
+een goede manier om een beter begrip te krijgen van de lesstof. 
+ 
+Omdat ik mij vooral heb gericht op het begrijpen van de stof heb ik minder aandacht kunnen besteden aan mijn website zelf.
+
+<img src="images/voortgang_screen_1.jpg" width="375px" alt="Voortgang 1">
+ 
+Wel heb ik een basis van de html neergezet en heb ik een aantal algemen stijlen toegevoegd. Door mijn aandacht vooral aan de
+oefeningen te besteden hoop ik dat het programmeren van de website gemakkelijker verloopt.
+ 
+<img src="images/voortgang_screen_2.jpg" width="375px" alt="Voortgang 2">
+ 
+
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| Adam     | Coen          | Danian    | Shae       |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| Adam            | Coen            | Danian          | Shae       
+| ---             | ---             | ---             | ---        
+| Geen            | Geen            | Geen            | Geen
+| bijzonderheden  | bijzonderheden  | bijzonderheden  | bijzonderheden
 
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
-
-- Inspector via Safari, om fonts van organisaties te downloaden.
+ 
+- Verstandig om de html zover mogelijk uit te werken voordat je begint aan het stijlen in css.
+- Aantekeningen maken in zowel html als de css om het overzicht te behouden.
+ 
+- Inspector via Safari, om fonts van organisaties te downloaden, vervolgens fontconverter.
+ 
 - Parallax scrollen is "background-attachment: fixed".
  
+- Codepen ontvangen voor het creeëren van een hamburger menu. 
+ 
 
-</details>
+</details open>
 
 
 
@@ -104,7 +123,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ## Voortgang 2 (week 3)
 
-<details>
+<details open>
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
