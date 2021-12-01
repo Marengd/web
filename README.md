@@ -83,12 +83,12 @@ een goede manier om een beter begrip te krijgen van de lesstof.
  
 Omdat ik mij vooral heb gericht op het begrijpen van de stof heb ik minder aandacht kunnen besteden aan mijn website zelf.
 
-<img src="images/voortgang_screen_1.jpg" width="375px" alt="Voortgang 1">
+<img src="images/voortgang_screen_1.png" width="375px" alt="Voortgang 1">
  
 Wel heb ik een basis van de html neergezet en heb ik een aantal algemen stijlen toegevoegd. Door mijn aandacht vooral aan de
 oefeningen te besteden hoop ik dat het programmeren van de website gemakkelijker verloopt.
  
-<img src="images/voortgang_screen_2.jpg" width="375px" alt="Voortgang 2">
+<img src="images/voortgang_screen_2.png" width="375px" alt="Voortgang 2">
  
 
 
