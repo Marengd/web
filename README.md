@@ -128,11 +128,27 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Stand van zaken
 
+Na drie weken is ben ik verder gegaan met het detailleren van de pagina. Zo heb ik het beeldmerk en het menu toegevoegd aan de navigatie.
+Daarnaast heb de afbeelding van de twee Twix fabrieken opnieuw gepositioneerd met "Object-fit" en "object-position". Dit zorgt
+ervoor de de afbeelding meeschaalt zonder dat het belangrijkste deel van de afbeelding uit het beeld verdwijnt.
+
+ 
 <img src="images/voortgang_2_screen_1.png" width="375px" alt="Voortgang 2">
  
+Ondanks de visuele inspector blijft het af en toe lastig om bepaalde onderdelen na te maken. Over het deel van de Twix website wat
+op onderstaande afbeelding te zien is had ik zo mijn twijfels. Dankzij Sanne zijn deze twijfels omgezet tot zekerheid en hoef ik mij
+geen zorgen meer te maken over het uiterlijk tijdens het stijlen. 
+ 
 <img src="images/voortgang_2_screen_2.png" width="375px" alt="Voortgang 2">
+ 
+Door mijn werkwijze is het zo dat de website zelf nog niet volledig is vormgegeven, wel heb ik de één van de uitkomsten van de
+"voortgang 1 meeting" direct in mijn website verwerkt. Door een "background-attachment" toe te voegen aan de onderstaande afbeelding
+lijkt het alsof de afbeelding op zijn plek blijft staan tijdens het scrollen. 
 
 <img src="images/voortgang_2_screen_3.png" width="375px" alt="Voortgang 2">
+ 
+Nu dat er een goede basis staat is het tijd om de het stijlen af te ronden zodat we ons kunnen richten op de "socials", animaties en eventuele verbeteringen
+aan de Twix website zelf, zodat we volgende week iets kunnen opleveren wat niet alleen af is, maar ook precies zoals we in gedachte hadden. 
 
 
 ### Agenda voor meeting
