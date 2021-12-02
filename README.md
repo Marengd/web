@@ -154,9 +154,9 @@ aan de Twix website zelf, zodat we volgende week iets kunnen opleveren wat niet 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| Adam            | Coen            | Danian                  | Shae       
-| ---             | ---             | ---                     | ---        
-| Uitlijning      | Geen            | Uitwerking socials      | Geen
+| Adam            | Coen                     | Danian                  | Shae       
+| ---             | ---                      | ---                     | ---        
+| Uitlijning      | Search button en Footer  | Uitwerking socials      | Geen
 
 
 ### Verslag van meeting
