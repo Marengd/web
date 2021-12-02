@@ -78,7 +78,7 @@ Our Story
 ### Stand van zaken
 
 Op de afgelopen twee weken aan lesstof kan ik positief terugblikken. Ondanks dat ik het gevoel heb dat ik over een "oké" basis beschik
-om aan de slag te gaan met mij website, heb ik mij deze twee weken voorgenomen om mij bij de start te verdiepen in de oefeningen. Herhalen is namelijk
+om aan de slag te gaan met mij website, heb ik mij voorgenomen om mij vanaf de start te verdiepen in de oefeningen. Herhalen is namelijk
 een goede manier om een beter begrip te krijgen van de lesstof. 
  
 Omdat ik mij vooral heb gericht op het begrijpen van de stof heb ik minder aandacht kunnen besteden aan mijn website zelf.
@@ -127,17 +127,20 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+
+<img src="images/voortgang_2_screen_1.png" width="375px" alt="Voortgang 2">
+ 
+<img src="images/voortgang_2_screen_2.png" width="375px" alt="Voortgang 2">
+
+<img src="images/voortgang_2_screen_3.png" width="375px" alt="Voortgang 2">
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| Adam            | Coen            | Danian                  | Shae       
+| ---             | ---             | ---                     | ---        
+| Uitlijning      | Geen            | Uitwerking socials      | Geen
 
 
 ### Verslag van meeting
