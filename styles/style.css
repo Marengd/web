@@ -319,6 +319,10 @@ main section:nth-of-type(3) article {
   align-items: center;
 }
 
+main section:nth-of-type(3) article img {
+  order: -1;
+}
+
 
 
 
