@@ -1,16 +1,17 @@
 /* CSS Document */
-*, *::after, *::before {
+*, *::after, *::before {  
   box-sizing:border-box;  
 }
 
 
 
-/******************************/
-/* ALGEMENE CUSTOM PROPERTIES */
-/******************************/
+/**************************************************/
+/***************** Custom properties *************/
+/************************************************/
 
 :root {
 	--white:#ffffff;
+  --accent-grey:#F9F1DB;
   --grey:#F4F4F4;
 	--black:#000000;
 
@@ -29,27 +30,46 @@
 
 
 
-/********************/
-/* ALGEMENE STIJLEN */
-/********************/
+/**********************************************/
+/************* Algemene stijling *************/
+/********************************************/
 
 body {
-  /* margin: 0; */
+  margin: 0;
 
   overflow-x:hidden;
-  background-color: #acacac;
+  /* background-color: #acacac; */
 }
 
 /* Typografie */
 
+@font-face {
+  font-family: 'Twix';
+  src: url('../fonts/Twix_1.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Glowworm';
+  src: url('../fonts/GlowwormMN-Compressed_1.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Ag book';
+  src: url('../fonts/AGBookRounded-Medium.woff') format('woff');
+}
+
 
 h1 {
-  font-family: arial;
+  font-family: 'Glowworm';
   font-size: 40px;
+
+  text-transform: uppercase;
+
+  color: white;
 }
 
 h2 {
-  font-family: arial;
+  font-family: 'Twix';
   font-size: 40px;
   letter-spacing: 1.6px;
   
@@ -59,8 +79,8 @@ h2 {
 }
 
 h3 {
-  font-family: arial;
-  font-size: 20px;
+  font-family: 'Twix';
+  font-size: 22px;
   letter-spacing: 1.6px;
   text-transform: uppercase;
   
@@ -70,7 +90,7 @@ h3 {
 }
 
 h4 {
-  font-family: arial;
+  font-family: 'Twix';
   font-size: 14px;
   letter-spacing: 1.6px;
   
@@ -83,7 +103,7 @@ h4 {
 
 
 p {
-  font-family: arial;
+  font-family: Ag book;
   font-size: 18px;
   letter-spacing: 1.6px;
   
@@ -94,17 +114,15 @@ p {
 }
 
 
-/********************/
-/* */
-/********************/
+
 
 
 a {
 
-  padding: 20px 46px 20px 46px;
+  padding: 18px 24px 18px 24px;
 
   font-family: arial;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   
   text-transform: uppercase;
@@ -118,15 +136,133 @@ a {
 
 }
 
+button {
+  border: none;
+  background: none;
+}
 
-/* header {
-} */
+button:hover {
+  cursor: pointer;
+}
+
+
+
+
+
+/************************************************************/
+/* Header, nav, "Explore" Left or right Twix? "  ***********/
+/**********************************************************/
+
+
+
+
+
+/* Stijlen header algemeen */
+
+header {
+  height: 30em;
+  background-color: blue;
+}
+
+
+
+/* Stijling navigatie algemeen */
+
 
 header nav {
+  display: flex;
+  flex-direction: row;
 
+  z-index: 99;
 
-  background-color: red;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+
+  min-height: 5em;
+
+  background-image: radial-gradient(var(--accent-grey), var(--background-color));
 }
+
+
+
+/* Stijling menu navigatie knoppen mobiel*/
+
+
+header nav button {
+  position: absolute;
+}
+
+/* Stijling Twix logo, directe home knop */
+header nav button img {
+  width: auto;
+  height: 2.4em;
+}
+
+/* Stijling hamburger menu knop */
+header nav button:first-of-type {  
+  top: calc( 50% - 1.2em ); 
+  left: 1em;
+}
+
+header nav button:last-of-type {
+  top: calc( 50% - .5em ); 
+  right: 1em;
+}
+
+header nav button:last-of-type::before {
+  content: '☰';
+
+  color: var(--button-background-color);
+}
+
+
+
+/* Stijling menu groter desktop */
+
+
+header nav ul {
+  list-style-type: none;
+}
+
+
+
+/* Stijling blurb header */
+header article {
+  position: absolute;
+
+  top: calc(20% - 1em);
+  left: 1em;
+
+  z-index: 99;
+}
+
+header article h1 {
+
+  max-width: 8em;
+}
+
+/* Stijling achtergrond afbeelding header */
+header > img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: 45%;
+
+  /* Liever niet naar vragen, maar aangezien het niet op browsers werkt .. (: */
+  -webkit-filter: brightness(50%);
+
+}
+
+
+
+
+
+/************************************************************/
+/* Section 1, " Intro, Do you prefer Left TWIX " ***********/
+/**********************************************************/
 
 main section:first-of-type {
   background-color: var(--white);
@@ -136,13 +272,33 @@ main section:first-of-type {
 
 
 
+/************************************************************/
+/* Section 2, " Double Trouble: Twix Cookies & Creme. " ****/
+/**********************************************************/
+
 main section:nth-of-type(2) {
   background-color: var(--overlay-background-color);
+}
+
+main section:nth-of-type(2) article {
+  display: flex;
+  flex-direction: column;
+}
+
+main section:nth-of-type(2) article img{
+  order: -1;
+
+  width: 16em;
+  height: 16em;
 }
 
 
 
 
+
+/***********************************************/
+/* Section 3, " Our products. " ***************/
+/*********************************************/
 
 main section:nth-of-type(3) {
   text-transform: uppercase;
@@ -152,7 +308,6 @@ main section:nth-of-type(3) {
 }
 
 main section:nth-of-type(3) h2 {
-
   color: var(--dark-background-color);
 }
 
@@ -167,11 +322,63 @@ main section:nth-of-type(3) article {
 
 
 
+
 /***********************************************************/
 /* Section 4, " Twix Cookies & Creme Cheesecake Mashup. " */
 /*********************************************************/
 
-main section:nth-of-type(4){
+main section:nth-of-type(4) {
+  position: relative;
+  text-align: center;
+
+  /* Tijdelijk */
+  background-color: var(--black);
+
+
+  height: 55em;
+}
+
+main section:nth-of-type(4) > a {
+  /* Gaat over de tekstkleur, eventueel de naam van de variable veranderen. */
+  color: var(--button-background-color);
+  background-color: var(--white);
+}
+
+main section:nth-of-type(4) article {
+  position: absolute;
+
+  left: calc(50% - 10em);
+  right: calc(50% -10em);
+
+  min-width: 20em;
+  min-height: 32em;
+
+
+  text-align: center;
+
+  border-radius: 1.2em;
+
+  background-image: 
+    radial-gradient(circle at center 37%,var(--background-color) 25%, transparent 25%),
+    radial-gradient(var(--accent-grey), var(--background-color));
+}
+
+main section:nth-of-type(4) article img {
+  width: 16em;
+  height: 16em;
+}
+
+main section:nth-of-type(4) article h4 {
+
+  color: var(--dark-background-color);
+}
+
+main section:nth-of-type(4) article h3 {
+
+  
+  width: 10em;
+  text-align: left;
+
 
 }
 
@@ -184,6 +391,7 @@ main section:nth-of-type(4){
 /*********************************************/
 
 main section:nth-of-type(5) {
+  padding: 4em, 0em, 2em, 0em;
 
   background-color: var(--accent-background-color);
 }
@@ -203,8 +411,52 @@ main section:nth-of-type(5) article {
   align-items: center;
 }
 
+main section:nth-of-type(5) article img {
+  order: -1;
+}
 
 
 
+
+
+/***********************************************/
+/* Section 6, " Afbeelding van Twix met hartjes. " */
+/*********************************************/
+
+main section:nth-of-type(6) {
+  
+  min-height: 60em;
+  min-width: 30em;
+
+  background-image: url("../images/twix_reep_met_hartjes.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+
+
+
+/***********************************************/
+/* Section 7, " Visit us on social. " */
+/*********************************************/
+
+main section:nth-of-type(7) {
+
+  /* Tijdelijk, volledige styling aanpassen. */
+  min-height: 50em;
+
+  margin: 0;
+
+  background-color: var(--accent-background-color);
+}
+
+main section:nth-of-type(7) h2 {
+  text-transform: uppercase;
+  text-align: center;
+
+  color: var(--dark-background-color);
+}
 
 
