@@ -6,10 +6,6 @@
 
 body {
   margin: 0;
-  
-  overflow-x: hidden;
-
-  /* background-color: #acacac; */
 }
 
 
@@ -26,6 +22,7 @@ body {
 
   --orange: #e64d1e;
 
+  --dark-blue: blue;
 
 	--button-background-color:#E42525;
   --accent-button-background-color: #E62B1E;
@@ -167,25 +164,6 @@ p {
 /* █████████████████████ Knoppen ████████████████████ */
 /* ██████████████████████████████████████████████████ */
 
-/* a {
-
-  padding: 18px 24px 18px 24px;
-
-  font-family: 'twix';
-  font-size: 14px;
-  font-weight: bold;
-  
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 1.6px;
-
-  color: var(--white);
-  background-color: var(--button-background-color);
-
-  border-radius: 30px;
-
-} */
 
 a {
 
@@ -219,13 +197,21 @@ transition-property: background-position;
 transition-timing-function: cubic-bezier(0.75, 0, 0.25, 0);
 }
 
+
 a:hover {
   color: var(--accent-button-background-color);
   background-position: 0;
 }
 
+a:focus {
+}
+
+a:active {
+  background-position: 0;
+}
+
 /* Focus toevoegen. */
-/* Activated toevoegen. */
+/* Activate toevoegen. */
 /* Visited toevoegen. */
 
 button {
@@ -280,31 +266,77 @@ header {
 }
 
 
-
-
 header nav {
   display: flex;
-  flex-direction: row;
-
-  z-index: 99;
+  justify-content: space-between;
 
   position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
 
-  max-height: 6.2em;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  min-height: 5em;
+
+  z-index: 99;
 
   background-image: radial-gradient(var(--accent-grey), var(--background-color));
 }
 
-nav ul {
-  opacity: 0;
-  transition: all .3s ease-in;
+header nav.uitgeklapt{
+  bottom: 0;
 }
 
-.visible {
-  opacity: 1;
+header nav ul {
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 3em;
+
+  position: absolute;
+
+  top: 6em;
+
+  visibility: hidden;
+
+}
+
+header nav ul.visible {
+  visibility: unset;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a{
+  display: inline-block;
+
+  padding: 0;
+
+  font-family: 'twix';
+  font-size: 32px;
+  font-weight: inherit;
+  
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  letter-spacing: 1.6px;
+
+  border-radius: 0;
+
+  color: var(--dark-background-color);
+  background-image: none;
+
+  background-position-x: none;
+  background-position-y: none;
+  background-size: none;
+
+  transition-delay: none;
+  transition-duration: none;
+  transition-property: none;
+  transition-timing-function: none;
 }
 
 
@@ -313,8 +345,7 @@ nav ul {
 
 
 header nav button {
-  position: fixed;
-
+  position: absolute;
   z-index: 99;
 }
 
@@ -325,14 +356,18 @@ header nav button img {
 }
 
 /* Stijling hamburger menu knop */
-header nav button:first-of-type {  
-  top: 2.5em; 
+header nav button:first-of-type {
+
+  top: 1.8em;
   left: 1em;
 }
 
 header nav button:last-of-type {
-  top: 2.6em; 
+  display: block;
+
+  top: 1.8em;
   right: 1em;
+  
 
   font-size: 16px;
   font-family: 'Twix';
@@ -347,6 +382,13 @@ header nav button:last-of-type::before {
 
   color: var(--button-background-color);
 }
+
+/* 
+.sluiten {
+  content: '✕';
+} */
+
+
 
 
 
