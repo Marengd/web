@@ -957,7 +957,7 @@ main section:nth-of-type(5) article a {
 /* ██████████████████████████████████████████████████ */
 
 main section:nth-of-type(6) {
-  min-height: 60em;
+  min-height: 25em;
   min-width: 30em;
 
   margin: 0;
