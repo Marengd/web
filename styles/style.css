@@ -4,10 +4,15 @@
 }
 
 
+body {
+  margin: 0;
+}
 
-/**************************************************/
-/***************** Custom properties *************/
-/************************************************/
+
+
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░ Properties ░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
 
 :root {
 	--white:#ffffff;
@@ -15,9 +20,15 @@
   --grey:#F4F4F4;
 	--black:#000000;
 
+  --orange: #e64d1e;
+
+  --dark-blue: blue;
 
 	--button-background-color:#E42525;
   --accent-button-background-color: #E62B1E;
+
+
+
 
   --dark-background-color:#490F00;
   --background-color:#eaaa22;
@@ -26,40 +37,56 @@
   --accent-twix-color: #f0c66c;
 
   --overlay-background-color:#57BDF4;
+
+  --slider-background-color: #ff8080;
 }
-
-
-
-
 
 /**********************************************/
 /************* Algemene stijling *************/
 /********************************************/
 
-body {
-  margin: 0;
-  
-  overflow-x: hidden;
 
-  /* background-color: #acacac; */
-}
 
-/* Typografie */
+
+
+
+
+
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░ Typografie ░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+
+
+
+
+
+
+/* █████████████████████████████████████████████████ */
+/* █████████████████████ Fonts █████████████████████ */
+/* █████████████████████████████████████████████████ */
+
 
 @font-face {
   font-family: 'Twix';
-  src: url('../fonts/Twix_1.woff') format('woff');
+  src: url('../fonts/Twix.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Glowworm';
-  src: url('../fonts/GlowwormMN-Compressed_1.woff') format('woff');
+  src: url('../fonts/GlowwormMN-Compressed.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Ag book';
   src: url('../fonts/AGBookRounded-Medium.woff') format('woff');
 }
+
+
+
+
+/* █████████████████████████████████████████████████ */
+/* ██████████████████ Typografie ███████████████████ */
+/* █████████████████████████████████████████████████ */
 
 
 h1 {
@@ -125,24 +152,67 @@ p {
 
 
 
+
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░ Interactie ░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+
+
+
+
+/* ██████████████████████████████████████████████████ */
+/* █████████████████████ Knoppen ████████████████████ */
+/* ██████████████████████████████████████████████████ */
+
+
 a {
 
-  padding: 18px 24px 18px 24px;
+padding: 18px 24px 18px 24px;
 
-  font-family: 'twix';
-  font-size: 14px;
-  font-weight: bold;
+font-family: 'twix';
+font-size: 14px;
+font-weight: inherit;
   
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 1.6px;
+text-align: center;
+text-transform: uppercase;
+text-decoration: none;
+letter-spacing: 1.6px;
 
-  color: var(--white);
-  background-color: var(--button-background-color);
+border-radius: 30px;
 
-  border-radius: 30px;
+color: var(--white);
+background-image: linear-gradient(45deg, var(--white) 50%,var(--button-background-color) 50%);
 
+background-position-x: 100%;
+background-position-y: 0%;
+background-size: 200% 200%;
+
+cursor: pointer;
+
+text-align: center;
+text-decoration: none;
+transition-delay: 0s;
+transition-duration: 0.6s;
+transition-property: background-position;
+transition-timing-function: cubic-bezier(0.75, 0, 0.25, 0);
 }
+
+
+a:hover {
+  color: var(--accent-button-background-color);
+  background-position: 0;
+}
+
+a:focus {
+}
+
+a:active {
+  background-position: 0;
+}
+
+/* Focus toevoegen. */
+/* Activate toevoegen. */
+/* Visited toevoegen. */
 
 button {
   border: none;
@@ -154,7 +224,7 @@ button:hover {
 }
 
 
-
+/* Driehoekige dingetjes die op Twixjes lijken. */
 main section div {
   width: 7em;
   height: 8em;
@@ -175,40 +245,98 @@ main section div {
 
 
 
-/************************************************************/
-/* Header, nav, "Explore" Left or right Twix? "  ***********/
-/**********************************************************/
+
+
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░ Primaire Navigatie ░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
 
 
 
 
 
-/* Stijlen header algemeen */
+
+/* ██████████████████████████████████████████████████ */
+/* █████████████████████ Header █████████████████████ */
+/* ██████████████████████████████████████████████████ */
+
 
 header {
   height: 30em;
-  background-color: blue;
 }
-
-
-
-/* Stijling navigatie algemeen */
 
 
 header nav {
   display: flex;
-  flex-direction: row;
-
-  z-index: 99;
+  justify-content: space-between;
 
   position: fixed;
-  left: 0;
-  right: 0;
+
   top: 0;
+  right: 0;
+  left: 0;
 
   min-height: 5em;
 
+  z-index: 99;
+
   background-image: radial-gradient(var(--accent-grey), var(--background-color));
+}
+
+header nav.uitgeklapt{
+  bottom: 0;
+}
+
+header nav ul {
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 3em;
+
+  position: absolute;
+
+  top: 6em;
+
+  visibility: hidden;
+
+}
+
+header nav ul.visible {
+  visibility: unset;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a{
+  display: inline-block;
+
+  padding: 0;
+
+  font-family: 'twix';
+  font-size: 32px;
+  font-weight: inherit;
+  
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  letter-spacing: 1.6px;
+
+  border-radius: 0;
+
+  color: var(--dark-background-color);
+  background-image: none;
+
+  background-position-x: none;
+  background-position-y: none;
+  background-size: none;
+
+  transition-delay: none;
+  transition-duration: none;
+  transition-property: none;
+  transition-timing-function: none;
 }
 
 
@@ -218,6 +346,7 @@ header nav {
 
 header nav button {
   position: absolute;
+  z-index: 99;
 }
 
 /* Stijling Twix logo, directe home knop */
@@ -227,34 +356,50 @@ header nav button img {
 }
 
 /* Stijling hamburger menu knop */
-header nav button:first-of-type {  
-  top: calc( 50% - 1.2em ); 
+header nav button:first-of-type {
+
+  top: 1.8em;
   left: 1em;
 }
 
 header nav button:last-of-type {
-  top: calc( 50% - .5em ); 
+  display: block;
+
+  top: 1.8em;
   right: 1em;
+  
+
+  font-size: 16px;
+  font-family: 'Twix';
+
+  color: var(--dark-background-color);
 }
 
 header nav button:last-of-type::before {
   content: '☰';
 
+  font-size: 20px;
+
   color: var(--button-background-color);
 }
 
-
-
-/* Stijling menu groter desktop */
-
-
-header nav ul {
-  list-style-type: none;
-}
+/* 
+.sluiten {
+  content: '✕';
+} */
 
 
 
-/* Stijling blurb header */
+
+
+
+
+
+/* ██████████████████████████████████████████████████ */
+/* ██████████████ Header, Linker Blok ███████████████ */
+/* ██████████████████████████████████████████████████ */
+
+
 header article {
   position: absolute;
 
@@ -265,11 +410,15 @@ header article {
 }
 
 header article h1 {
-
   max-width: 8em;
 }
 
-/* Stijling achtergrond afbeelding header */
+
+/* ██████████████████████████████████████████████████ */
+/* ████████ Header, Achtergrond Afbeelding ██████████ */
+/* ██████████████████████████████████████████████████ */
+
+
 header > img {
   width: 100%;
   height: 100%;
@@ -285,10 +434,20 @@ header > img {
 
 
 
-/************************************************************/
-/* Section 1, " Intro, Do you prefer Left TWIX " ***********/
-/**********************************************************/
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░                    ░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
 
+
+
+
+
+/* ██████████████████████████████████████████████████ */
+/* █████████████ Section 1 , Container ██████████████ */
+/* ██████████████████████████████████████████████████ */
+
+
+/* Container, witte blok bruine tekst */
 main section:first-of-type {
   display: flex;
   justify-content: center;
@@ -302,6 +461,11 @@ main section:first-of-type {
   background-color: var(--white);
 }
 
+/* ██████████████████████████████████████████████████ */
+/* ██████████████ Section 2 , Content ███████████████ */
+/* ██████████████████████████████████████████████████ */
+
+/* Stijling, body tekst */
 main section:first-of-type p {
   margin: .4em;
 }
@@ -310,13 +474,21 @@ main section:first-of-type p {
 
 
 
-/************************************************************/
-/* Section 2, " Double Trouble: Twix Cookies & Creme. " ****/
-/**********************************************************/
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░                    ░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+
+
+
+
+
+
+/* ██████████████████████████████████████████████████ */
+/* █████████████ Section 2 , Container ██████████████ */
+/* ██████████████████████████████████████████████████ */
+
 
 main section:nth-of-type(2) {
-  overflow: hidden;
-
   position: relative;
 
   display: flex;
@@ -326,18 +498,20 @@ main section:nth-of-type(2) {
   height: 40em;
 
   background-color: var(--overlay-background-color);
+
+  overflow: hidden;
 }
 
-/* Linker cirkel op de achtergrond. */
-main section:nth-of-type(2)::before {
 
+/* ▶▶ Styling, Linker cirkel op blauwe achtergrond */
+main section:nth-of-type(2)::before {
   position: absolute;
+
   top: -2em;
   left: -15em;
 
-  content:'';
-
   display: block;
+  content:'';
 
   width: 27em;
   height: 27em;
@@ -348,7 +522,7 @@ main section:nth-of-type(2)::before {
   background-color: var(--white);
 }
 
-/* Rechter cirkel op de achtergrond. */
+/* ▶▶ Styling, rechter cirkel op blauwe achtergrond */
 main section:nth-of-type(2)::after {
 
   position: absolute;
@@ -365,9 +539,21 @@ main section:nth-of-type(2)::after {
   border-radius: 50%;
 
   filter: opacity(20%);
+  /* background-color: var(--white); */
+
+  background-attachment: fixed;
+
+  filter: opacity(20%);
   background-color: var(--white);
 }
 
+
+/* ██████████████████████████████████████████████████ */
+/* ██████████████ Section 2 , Content ███████████████ */
+/* ██████████████████████████████████████████████████ */
+
+
+/* ▶▶▶▶ Container, Article */
 main section:nth-of-type(2) article {
   z-index: 50;
 
@@ -375,11 +561,7 @@ main section:nth-of-type(2) article {
   flex-direction: column;
 }
 
-
-main section:nth-of-type(2) article a {
-  align-self: flex-start;
-}
-
+/* ▶▶ Afbeelding Zwevende Twix */
 main section:nth-of-type(2) article img{
 
   width: 16em;
@@ -393,6 +575,7 @@ main section:nth-of-type(2) article img{
 	animation: zweven 6s ease-in-out infinite;
 }
 
+/* ▶▶ Animatie Zwevende Twix */
 @keyframes zweven {
 	0% {
 		transform: translatey(10%);
@@ -405,12 +588,29 @@ main section:nth-of-type(2) article img{
 	}
 }
 
+main section:nth-of-type(2) article h2 {
+}
+
+main section:nth-of-type(2) article a {
+  align-self: flex-start;
+}
 
 
 
-/***********************************************/
-/* Section 3, " Our products. " ***************/
-/*********************************************/
+
+
+
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░                    ░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+
+
+
+
+/* ██████████████████████████████████████████████████ */
+/* █████████████ Section 3 , Container ██████████████ */
+/* ██████████████████████████████████████████████████ */
+
 
 main section:nth-of-type(3) {
   width: auto;
@@ -428,6 +628,13 @@ main section:nth-of-type(3) {
   background-color: var(--accent-background-color);
 }
 
+
+/* ██████████████████████████████████████████████████ */
+/* ██████████████ Section 3 , Content ███████████████ */
+/* ██████████████████████████████████████████████████ */
+
+
+/*  ▶ ▶ Our Products */
 main section:nth-of-type(3) h2 {
   font-family: 'glowworm';
 
@@ -436,6 +643,11 @@ main section:nth-of-type(3) h2 {
   margin-bottom: 3em;
 }
 
+
+/* ▲▲▲▲▲▲ */
+
+
+/*  ▶ ▶ Container, Article */
 main section:nth-of-type(3) article {
   display: flex;
   flex-direction: column;
@@ -443,6 +655,7 @@ main section:nth-of-type(3) article {
   align-items: center;
 }
 
+/*  ▶ ▶ Afbeeldingen Linker en rechter Twix */
 main section:nth-of-type(3) article img {
   order: -1;
 
@@ -452,11 +665,17 @@ main section:nth-of-type(3) article img {
   transition: all .4s ease-in-out; 
 }
 
+/*  ▶ ▶ Afbeeldingen vergroten, hover */
 main section:nth-of-type(3) article img:hover {
   transform: scale(1.1);
 }
 
+/* Zodat de woorden Left en Right op een aparte regel komen */
+main section:nth-of-type(3) article span {
+  display: block;
+}
 
+/*  ▶ ▶ Klikbare titels, Left Right Twix products */
 main section:nth-of-type(3) article a:first-of-type {
   display: inline-block;
 
@@ -468,30 +687,39 @@ main section:nth-of-type(3) article a:first-of-type {
 
   color: var(--dark-background-color);
   background-color: transparent;
+  background-image: none;
 
   margin: 2em 0 1.5em 0;
   padding: 0;
 }
 
+/*  ▶ ▶ Klikbare titels kleuren rood, hover */
 main section:nth-of-type(3) article a:first-of-type:hover {
   color: var(--button-background-color);
 }
 
+
+/*  ▶ ▶ Klikbare rode knoppen, Explore */
 main section:nth-of-type(3) article a:last-of-type {
   margin-bottom: 5em;
 }
 
-main section:nth-of-type(3) article span {
-  display: block;
-}
 
 
 
 
 
-/***********************************************************/
-/* Section 4, " Twix Cookies & Creme Cheesecake Mashup. " */
-/*********************************************************/
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+/* ░ Section 4, gele blok, achtergrond afbeelding ░░ */
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+
+
+
+
+/* ██████████████████████████████████████████████████ */
+/* █████████████ Section 4 , Container ██████████████ */
+/* ██████████████████████████████████████████████████ */
+
 
 main section:nth-of-type(4) {
   display: flex;
@@ -502,11 +730,29 @@ main section:nth-of-type(4) {
   height: 55em;
 }
 
+/*  ▶ ▶ Achtergrond afbeelding */
+main section:nth-of-type(4) > img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: 45%;
+
+  filter: brightness(50%);
+}
+
+
+/* ██████████████████████████████████████████████████ */
+/* ██████████████ Section 4 , Content ███████████████ */
+/* ██████████████████████████████████████████████████ */
+
+
 main section:nth-of-type(4) article {
   z-index: 50;
 
   position: absolute;
 }
+
 
 main section:nth-of-type(4) article:first-of-type h4 {
   color: var(--white);
@@ -514,11 +760,19 @@ main section:nth-of-type(4) article:first-of-type h4 {
 
 main section:nth-of-type(4) article:first-of-type a {
   color: var(--button-background-color);
-  background-color: var(--white);
+  background-image: linear-gradient(45deg, var(--white) 50%,var(--white) 50%);
+
 }
 
-main section:nth-of-type(4) article:last-of-type {
+main section:nth-of-type(4) article:first-of-type a:hover {
+  color: var(--white);
+  background-image: linear-gradient(45deg, var(--button-background-color) 50%,var(--white) 50%);
+}
 
+
+
+/*  ▶ ▶ Article, Gele blok met Twix afbeelding */
+main section:nth-of-type(4) article:last-of-type {
   top: 16em;
   right: calc(50% -10em);
   left: calc(50% - 10em);
@@ -535,14 +789,38 @@ main section:nth-of-type(4) article:last-of-type {
     radial-gradient(var(--accent-grey), var(--background-color));
 }
 
-main section:nth-of-type(4) article:last-of-type img {
-  width: 16em;
-  height: 16em;
+
+/*  ▶ ▶ Gele blok met Twix afbeelding kleurt rood, hover */
+main section:nth-of-type(4) article:last-of-type.achtergrond-opvullen{
+  background-image: 
+    radial-gradient(circle at center 37%,var(--orange) 25%, transparent 25%),
+    radial-gradient(var(--button-background-color), var(--button-background-color));
 }
+
 
 main section:nth-of-type(4) article:last-of-type h4 {
   color: var(--dark-background-color);
+
+  transition: 1s ease-in-out;
 }
+
+main section:nth-of-type(4) article:last-of-type h4.kleineKop-oplichten {
+  color: var(--white);
+  transition: 1s;
+}
+
+
+main section:nth-of-type(4) article:last-of-type img {
+  width: 16em;
+  height: 16em;
+
+  transition: 1s ease-in-out;
+}
+
+main section:nth-of-type(4) article:last-of-type img.vergroot {
+  transform: scale(1.1);
+}
+
 
 main section:nth-of-type(4) article:last-of-type h3 {
   font-size: 22px;
@@ -552,7 +830,15 @@ main section:nth-of-type(4) article:last-of-type h3 {
   width: 10em;
 
   margin-left: 1.5em;
+
+  transition: 1s ease-in-out;
 }
+
+main section:nth-of-type(4) article:last-of-type h3.groteKop-oplichten {
+  color: var(--white);
+  transition: 1s;
+}
+
 
 main section:nth-of-type(4) article:last-of-type a {
   position: relative;
@@ -560,25 +846,23 @@ main section:nth-of-type(4) article:last-of-type a {
 
 }
 
-/* Achtergrond afbeelding */
-main section:nth-of-type(4) > img {
-
-  width: 100%;
-  height: 100%;
-
-
-  object-fit: cover;
-  object-position: 45%;
-
-  filter: brightness(50%);
-
-}
+/* Buttons moeten wit kleuren. */
 
 
 
-/***********************************************/
-/* Section 5, " All the Twix you need Twice. " */
-/*********************************************/
+
+
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░                                  ░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+
+
+
+
+/* ██████████████████████████████████████████████████ */
+/* █████████████ Section 5 , Container ██████████████ */
+/* ██████████████████████████████████████████████████ */
+
 
 main section:nth-of-type(5) {
   width: auto;
@@ -587,8 +871,13 @@ main section:nth-of-type(5) {
   background-color: var(--accent-background-color);
 }
 
-main section:nth-of-type(5) h2 {
 
+/* ██████████████████████████████████████████████████ */
+/* ██████████████ Section 5 , Content ███████████████ */
+/* ██████████████████████████████████████████████████ */
+
+
+main section:nth-of-type(5) h2 {
   padding-top: 2em;
   
   margin: 0 0 3em 0;
@@ -601,10 +890,13 @@ main section:nth-of-type(5) h2 {
   color: var(--dark-background-color);
 }
 
+
+/*  ▶ ▶ Positie driehoeken omhoogstaand. */
 main section:nth-of-type(5) div {
   position: absolute;
   left: calc(50% - 4em);
 }
+
 
 main section:nth-of-type(5) article {
   display: flex;
@@ -614,6 +906,7 @@ main section:nth-of-type(5) article {
   align-items: center;
 }
 
+
 main section:nth-of-type(5) article img {
   width: 22 em;
   height: auto;
@@ -622,13 +915,17 @@ main section:nth-of-type(5) article img {
   transition: all .4s ease-in-out; 
 }
 
+
+/*  ▶ ▶ Afbeeldingen vergroten, hover */
 main section:nth-of-type(5) article img:hover {
   transform: scale(1.1);
 }
 
+
 main section:nth-of-type(5) article h3 {
   margin: 1em 0 .1em 0;
 }
+
 
 main section:nth-of-type(5) article p {
   font-size: 16px;
@@ -638,6 +935,7 @@ main section:nth-of-type(5) article p {
   margin: 1em 0 1em 0;
 }
 
+
 main section:nth-of-type(5) article a {
   margin-bottom: 4em;
 }
@@ -646,9 +944,17 @@ main section:nth-of-type(5) article a {
 
 
 
-/***********************************************/
-/* Section 6, " Afbeelding van Twix met hartjes. " */
-/*********************************************/
+
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░                    ░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+
+
+
+
+/* ██████████████████████████████████████████████████ */
+/* █████████████ Section 6 , Container ██████████████ */
+/* ██████████████████████████████████████████████████ */
 
 main section:nth-of-type(6) {
   min-height: 60em;
@@ -656,8 +962,6 @@ main section:nth-of-type(6) {
 
   margin: 0;
   padding: 0;
-
-  background-color: red;
 
   background-image: url("../images/twix_reep_met_hartjes.jpeg");
   background-repeat: no-repeat;
@@ -671,9 +975,18 @@ main section:nth-of-type(6) {
 
 
 
-/***********************************************/
-/* Section 7, " Visit us on social. " */
-/*********************************************/
+
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░                    ░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+
+
+
+
+/* ██████████████████████████████████████████████████ */
+/* █████████████ Section 7 , Container ██████████████ */
+/* ██████████████████████████████████████████████████ */
+
 
 main section:nth-of-type(7) {
   min-height: 35em;
@@ -688,8 +1001,15 @@ main section:nth-of-type(7) {
   background-color: var(--accent-background-color);
 }
 
+
 main section span {
   position: relative;
+
+}
+
+
+main section span ul::-webkit-scrollbar {
+  display: none;
 }
 
 
@@ -701,6 +1021,7 @@ main section:nth-of-type(7) h2 {
 
   color: var(--dark-background-color);
 }
+
 
 main section:nth-of-type(7) ul {
 
@@ -718,6 +1039,7 @@ main section:nth-of-type(7) ul {
   scrollbar-width: none;
 }
 
+
 main section:nth-of-type(7) li {
   width: 20em;
   height: 20em;
@@ -728,12 +1050,15 @@ main section:nth-of-type(7) li {
   list-style-type: none;
 }
 
+
 main section:nth-of-type(7) li a {
   margin: 0;
   padding: 0;
 
   background-color: transparent;
+  background-image: none;
 }
+
 
 main section:nth-of-type(7) li img {
     width: 20em;
@@ -744,6 +1069,11 @@ main section:nth-of-type(7) li img {
 
     /* Linear gradient aan bovenkant toevoegen. */
 }
+
+
+
+
+
 
 main section:nth-of-type(7) button {
   position: absolute;
@@ -760,25 +1090,30 @@ main section:nth-of-type(7) button {
   background-color: var(--white);
 }
 
+
 main section:nth-of-type(7) button:first-of-type {
   top: calc(50% - 1em);
   left: 1em;
 }
 
+
 main section:nth-of-type(7) button:first-of-type::before {
-  content: '⟵';
+  content: '←';
 }
+
 
 main section:nth-of-type(7) button:last-of-type {
   top: calc(50% - 1em);
   right: 1em;
 }
 
+
 main section:nth-of-type(7) button:last-of-type::before {
-  content: '⟶';
+  content: '→';
 }
 
-main section div output {
+
+main section span output {
   display:block;
 
   width: 10em;
