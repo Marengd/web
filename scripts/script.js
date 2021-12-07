@@ -1,8 +1,12 @@
 // JavaScript Document
 
+var menu = document.querySelector("header nav");
+var submenu = document.querySelector("header nav > nav");
+
 var hamMenu = document.querySelector("nav ul");
 
 var hamButton = document.querySelector("nav button:last-of-type");
+var icoon = document.querySelector("nav button:last-of-type::before");
 
 
 
@@ -11,12 +15,10 @@ var hamButton = document.querySelector("nav button:last-of-type");
 
 hamButton.addEventListener("click", toggleHamburgerMenu);
 
-
-
 function toggleHamburgerMenu(){
-
     hamMenu.classList.toggle("visible");
-
+  //submenu.classList.toggle("zien");
+    menu.classList.toggle("uitgeklapt");
 }
 
 
