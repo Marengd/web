@@ -1,0 +1,430 @@
+
+
+
+
+
+
+
+
+
+/* Css
+
+
+
+
+
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░       Our story       ░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+
+
+
+
+
+
+
+
+
+
+/* Bezig met opschonen ... */
+
+
+
+
+
+
+
+
+
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░                   ░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+
+
+/* █████████████████████████████████████████████████ */
+/* ████████████████                 ████████████████ */
+/* █████████████████████████████████████████████████ */
+
+
+
+
+
+
+
+
+
+/* ██████████████████████████████████████████████████ */
+/* ██████████████ Header, Linker Blok ███████████████ */
+/* ██████████████████████████████████████████████████ */
+
+
+header article {
+
+  text-align: center;
+
+  position: absolute;
+
+  top: calc(20% - 1em);
+  left: 1em;
+
+  z-index: 50;
+}
+
+header article h1, h4 {
+  font-family: 'twix';
+  color: var(--dark-background-color);
+}
+
+
+
+/* ██████████████████████████████████████████████████ */
+/* ████████ Header, Achtergrond Afbeelding ██████████ */
+/* ██████████████████████████████████████████████████ */
+
+
+header > img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+
+
+
+
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░                    ░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+
+
+
+
+
+/* ██████████████████████████████████████████████████ */
+/* █████████████                       ██████████████ */
+/* ██████████████████████████████████████████████████ */
+
+
+/* Container, witte blok bruine tekst */
+main section:first-of-type {
+  display: flex;
+  justify-content: center;
+
+}
+
+/* ██████████████████████████████████████████████████ */
+/* ██████████████ Section 1 , Content ███████████████ */
+/* ██████████████████████████████████████████████████ */
+
+
+main section:first-of-type h3 {
+  max-width: 17em;
+
+  font-family: 'ag book';
+  font-size: 27px;
+
+  line-height: 42px;
+  letter-spacing: 0.5px;
+
+  text-align: center;
+  text-transform: unset;
+}
+
+
+
+
+
+
+
+
+
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░                    ░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+
+
+main section:nth-of-type(2) article {
+  height: 40em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+main section:nth-of-type(2) article:nth-child(odd) {
+  margin-left: 3em;
+
+  background-image: 
+  radial-gradient(circle at center 32%,var(--accent-background-color) 39%, transparent 35%),
+  radial-gradient(var(--white), var(--white));
+
+  background-position: -2em;
+}
+
+main section:nth-of-type(2) article:nth-child(even) {
+  margin-left: 1.5em;
+}
+
+main section:nth-of-type(2) article:nth-child(even) img {
+  width: 85%;
+}
+
+
+
+main section:nth-of-type(2) article img {
+  height: 16em;
+
+  order: -1;
+}
+
+main section:nth-of-type(2) article h2 {
+  max-width: 11em;
+
+  padding: 0;
+  margin: .2em 0 0 0;
+
+  font-family: 'glowworm';
+  font-size: 40px;
+  font-weight: inherit;
+
+  color: var(--dark-background-color);
+
+  line-height: 42px;
+  letter-spacing: 0.5px;
+
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/* Stijling, body tekst */
+main section:nth-of-type(2) p {
+  max-width: 23em;
+
+  font-family: 'ag book';
+  font-size: 18px;
+  font-weight: inherit;
+
+  color: var(--dark-background-color);
+
+  line-height: 30px;
+  letter-spacing: 0.5px;
+
+  text-align: left;
+  text-transform: unset;
+
+
+}
+
+
+main section:nth-of-type(3) {
+  width: 100vw;
+  height: 35em;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+}
+
+main section:nth-of-type(3) article {
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 99;
+}
+
+main section:nth-of-type(3) article h3 {
+  font-family: 'twix';
+  font-size: 14px;
+  letter-spacing: 0.5px;
+
+  text-transform: uppercase;
+  
+  color: var(--white);
+}
+
+main section:nth-of-type(3) article h2 {
+  font-family: 'glowworm';
+  font-size: 40px;
+
+  letter-spacing: 0.5px;
+}
+
+main section:nth-of-type(3) article p {
+
+  color: var(--white);
+  font-family: 'ag book';
+  font-size: 18px;
+
+  letter-spacing: 0.5px;
+}
+
+main section:nth-of-type(3) > img {
+  position: absolute;
+
+  width: 100%;
+  height: 35em;
+
+  filter: brightness(50%);
+
+  object-fit: cover;
+  object-position: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main section:nth-of-type(4) {
+  width: auto;
+  min-height: 60em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  align-items: center;
+
+  text-transform: uppercase;
+  text-align: center;
+
+  border-bottom: .3em solid var(--button-background-color);
+  background-color: var(--accent-background-color);
+}
+
+
+
+main section:nth-of-type(4) h2 {
+  font-family: 'glowworm';
+
+  color: var(--dark-background-color);
+
+  margin-bottom: 3em;
+}
+
+
+/* ▲▲▲▲▲▲ */
+
+
+/*  ▶ ▶ Container, Article */
+main section:nth-of-type(4) article {
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+}
+
+main section:nth-of-type(4) article p {
+  font-family: 'ag book';
+  font-size: 16px;
+
+  letter-spacing: 0.5px;
+  text-transform: lowercase;
+}
+
+/*  ▶ ▶ Afbeeldingen Linker en rechter Twix */
+main section:nth-of-type(4) article img {
+  order: -1;
+
+  width: 22em;
+  height: auto;
+
+  transition: all .4s ease-in-out; 
+}
+
+/*  ▶ ▶ Afbeeldingen vergroten, hover */
+main section:nth-of-type(4) article img:hover {
+  transform: scale(1.1);
+}
+
+/* Zodat de woorden Left en Right op een aparte regel komen */
+main section:nth-of-type(4) article span {
+  display: block;
+}
+
+/*  ▶ ▶ Klikbare titels, Left Right Twix products */
+main section:nth-of-type(4) article a:first-of-type {
+  display: inline-block;
+
+  font-size: 20px;
+  letter-spacing: 0.5px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--dark-background-color);
+  background-color: transparent;
+  background-image: none;
+
+  margin: 2em 0 1.5em 0;
+  padding: 0;
+}
+
+/*  ▶ ▶ Klikbare titels kleuren rood, hover */
+main section:nth-of-type(4) article a:first-of-type:hover {
+  color: var(--button-background-color);
+}
+
+
+/*  ▶ ▶ Klikbare rode knoppen, Explore */
+main section:nth-of-type(4) article a:last-of-type {
+  margin-bottom: 5em;
+}
+
+
+
+
+main section:nth-of-type(5) {
+
+  display: flex;
+  align-items: center;
+
+  height: 20em;
+
+  background-image: 
+  radial-gradient(circle at right 37%,var(--accent-twix-color) 25%, transparent 25%),
+  radial-gradient(var(--accent-background-color), var(--accent-background-color));
+}
+
+main section:nth-of-type(5) article {
+  margin-left: 1.5em;
+}
+
+main section:nth-of-type(5) h2 {
+  margin: 0;
+
+  font-family: 'twix';
+  font-size: 28px;
+  text-transform: uppercase;
+
+  color: var(--dark-background-color);
+}
+
+main section:nth-of-type(5) p{
+  text-align: left;
+  color: var(--dark-background-color);
+
+  margin-bottom: 3em;
+}
+
+main section:nth-of-type(5) a {
+  padding: 1.2em 6em 1.2em 6em
+}
