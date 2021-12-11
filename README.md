@@ -273,8 +273,17 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. https://www.twix.com/ | Gebruik gemaakt van, content, afbeeldingen, illustraties tekst.
+ 
+2. https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit?retiredLocale=nl | Object fit, object position. 
+3. https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment | Background attachment.
+ 
+4. https://www.w3docs.com/snippets/html/how-to-display-an-unordered-list-in-two-columns.html | Twee kolommen in 'Ul'.
+ 
+5. https://bennettfeely.com/clippy/ | Genereren clip path.
+ 
+6. https://codepen.io/shooft/pen/rNGaGYq | Twee radial gradients background-image.
+7. https://codepen.io/shooft/pen/NWareja | Animeren background-image met Houdini.
+8. https://codepen.io/jeremyfrank/pen/vNPwME | Carousel met scroll indicator.
 
 </details>
