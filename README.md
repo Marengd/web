@@ -183,25 +183,26 @@ De toegankelijkheidstest bestond uit drie onderdelen. Hoe goed de website te bed
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
 
+ 
+### Enkel navigeren met toetsenbord
+ 
 #### Titel eerste bevinding
 Hier korte omschrijving (met indien nodig een afbeelding)
 
 Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
 
 
-#### Titel tweede bevinding. 
+### Gebruik van Screenreaders
+ 
+#### Titel eerste bevinding
 Hier korte omschrijving (met indien nodig een afbeelding)
 
 Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel nog een bevinding. 
+ 
+ 
+### Het web met een beperking
+ 
+#### Titel eerste bevinding
 Hier korte omschrijving (met indien nodig een afbeelding)
 
 Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
