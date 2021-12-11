@@ -219,7 +219,32 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+ 
+De laatste voortgang. Waar ik wat dat betreft goed bezig ben. Zijn er nog een aantal uitdagingen die ik graag zou willen trotseren voordat ik het eindgesprek in ga. Op het moment staan de eerste en de tweede pagina in zijn geheel en zijn er nog een aantal details die ik moet toevoegen om te kunnen zeggen dat het me is gelukt om de Twix website "netter" na te maken. 
+ 
+Eén van de goede punten zijn de animaties. Aangezien ik voor een speelse website heb gekozen zal het ook veel minder storen om wat leuke toevoegingen te maken. Als voorbeeld het volgende. Zodra je muis het blok betreed kleurt deze rood en klinkt er een hemels gezang op de achtergrond. 
+ 
+Als je hierdoor niet meer zin krijgt in een Twix. 
+ 
+<img src="images/voortgang_3_screen_1.png" width="375px" alt="Voortgang 2">
+ 
+Daarnaast heb ik me van mijn beste kant geprobeerd te laten zien en heb ik ervoor gekozen om een "clip-path" te gebruiken in plaats van een afbeelding voor de driehoeken die omhoog staan. Nu kan dit volgens Sanne ook zonder div, alleen is dat mij jammer genoeg niet gelukt.
 
+<img src="images/voortgang_3_screen_2.png" width="375px" alt="Voortgang 2">
+
+Iets waar ik erg trots op ben is dat de carousel daadwerkelijk op die van Twix begint te lijken. Nu moet ik daar natuurlijk wel eerlijk bij vertellen dat ik dit niet zelf voor elkaar heb gekregen. 
+ 
+<img src="images/voortgang_3_screen_3.png" width="375px" alt="Voortgang 2">
+ 
+Wat dat betreft wordt het al goed gerekend als de carousel kan scrollen, maar daar nam ik zelf geen genoegen mee. Zo is nu te zien hoe de de rode balk meebeweegt aan de hand van het scrollen. 
+ 
+<img src="images/voortgang_3_screen_4.png" width="375px" alt="Voortgang 2">
+ 
+Daarnaast wou ik nog vermelden hoe de code die ik van Sanne heb gekregen voor het creëren van een harde cirkel in een radial gradient heeft geholpen bij meerdere elementen op de website zoals hieronder. 
+ 
+<img src="images/voortgang_3_screen_5.png" width="375px" alt="Voortgang 2">
+ 
+Wat betekent dat het dus niet steeds een afbeelding hoeft te zijn die achter het blok wordt geplaatst. 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
