@@ -280,11 +280,29 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Na vier weken meerdere malen geconfronteerd te zijn met de moeilijkheidsgraad van het programmeren kan ik trots zijn op wat ik heb neergezet. Ondanks mijn twijfel over hoe ik bepaalde elementen van de Twix website heb uitgewerkt.
+ 
+ 
+
 
 ### Screenshot(s)
 
 hier screenshot(s) van je eindresultaat
+ 
+<img src="images/voortgang_5_screen_1.png" width="375px" alt="Voortgang 5">
+ 
+<img src="images/voortgang_5_screen_2.png" width="375px" alt="Voortgang 5">
+ 
+<img src="images/voortgang_5_screen_3.png" width="375px" alt="Voortgang 5">
+ 
+<img src="images/voortgang_5_screen_4.png" width="375px" alt="Voortgang 5">
+ 
+<img src="images/voortgang_5_screen_5.png" width="375px" alt="Voortgang 5">
+ 
+Het was een enorme uitdaging, één die ik tot de dag van vandaag niet los kan laten, aangezien het detail die het geheel vormt ontbreekt. Daarnaast heb ik dit doel enkel kunnen bereiken door het combineren van andermans werk, waar ik uiteraard de bronnen van heb vermeld. Maar ondanks dat ik het niet volledig zelf heb weten te creëren geeft het een voldoening zodra ik de knoppen gebruik om te scrollen en daarnaast zie hoe de "indicator" meebeweegt.
+ 
+<img src="images/voortgang_5_screen_6.png" width="375px" alt="Voortgang 5">
+ 
 
 </details>
 
