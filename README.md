@@ -19,7 +19,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 Danian Marengo
 
 #### Je startniveau:
-Rood, ik kan het wel. Maar doordat ik het weinig doe roest ik. Als het lukt is coderen stiekem wel leuk. 
+Rood. Ik kan het wel, maar doordat ik het weinig doe is het hier wat vastgeroest ik. Als het lukt is coderen stiekem wel leuk. 
 
 #### Je focus:
 Surface plane
@@ -78,14 +78,14 @@ Our Story
 ### Stand van zaken
 
 Op de afgelopen twee weken aan lesstof kan ik positief terugblikken. Ondanks dat ik het gevoel heb dat ik over een "oké" basis beschik
-om aan de slag te gaan met mij website, heb ik mij voorgenomen om mij vanaf de start te verdiepen in de oefeningen. Herhalen is namelijk
+om aan de slag te gaan met mijn website, heb ik mij voorgenomen om mij vanaf de start te verdiepen in de oefeningen. Zelf toepassen is namelijk
 een goede manier om een beter begrip te krijgen van de lesstof. 
  
 Omdat ik mij vooral heb gericht op het begrijpen van de stof heb ik minder aandacht kunnen besteden aan mijn website zelf.
 
 <img src="images/voortgang_screen_1.png" width="375px" alt="Voortgang 1">
  
-Wel heb ik een basis van de html neergezet en heb ik een aantal algemen stijlen toegevoegd. Door mijn aandacht vooral aan de
+Wel heb ik een basis van de html neergezet en heb ik een aantal algemene stijlen toegevoegd. Door mijn aandacht vooral aan de
 oefeningen te besteden hoop ik dat het programmeren van de website gemakkelijker verloopt.
  
 <img src="images/voortgang_screen_2.png" width="375px" alt="Voortgang 2">
@@ -110,12 +110,12 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
  
 - Inspector via Safari, om fonts van organisaties te downloaden, vervolgens fontconverter.
  
-- Parallax scrollen is "background-attachment: fixed".
+- Parallax scrollen realiseren door "background-attachment: fixed".
  
-- Codepen ontvangen voor het creeëren van een hamburger menu. 
+- Codepen van de student assistenten ontvangen voor het creeëren van een hamburger menu. 
  
 
-</details open>
+</details>
 
 
 
@@ -123,7 +123,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ## Voortgang 2 (week 3)
 
-<details open>
+<details>
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
@@ -156,16 +156,15 @@ samen met je groepje opstellen
 
 | Adam            | Coen                     | Danian                  | Shae       
 | ---             | ---                      | ---                     | ---        
-| Uitlijning      | Search button en Footer  | Uitwerking socials      | Geen
+| Uitlijning      | Search button en Footer  | Uitwerking socials      | Slider
 
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Het zou natuurlijk helemaal geweldig zijn als de interactieve elementen als de carousel werken, aangezien we voor surface plane hebben gekozen. Maar Sanne heeft aangegeven dat het wat dat betreft voldoende is als de blokken kunnen scrollen. 
+ 
+- Sanne heeft een soort gelijke carousel die Shae en ik nodig hebben gemaakt voor het van Gogh museum en heeft de code daarvan gedeeld om eventueel van te kunnen leren. 
 
 </details>
 
@@ -178,6 +177,9 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <details>
 <summary>uitwerken na test in 8e voortgang</summary>
 
+De toegankelijkheidstest bestond uit drie onderdelen. Hoe goed de website te bedienen is met enkel het toetsenbord, hoe goed de website te gebruiken is met een screen reader en het bedienen van de website met een visuele beperking of problemen met de motoriek. In tweetallen hebben we elkaars website getest op basis van eerder genoemde punten. 
+ 
+ 
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
 
@@ -222,20 +224,23 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| Adam                | Coen                 | Danian                  | Shae       
+| ---                 | ---                  | ---                     | ---        
+| Stijling Navigatie  | Iconen in blokken    | 'After' op de headings  | Uit en inklapbare blokken tekst
 
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Achteraf bleek het te zijn dat Adam zijn navigatie moeilijk te stijlen was door de nesting van zijn "ul's". Deze zaten namelijk in "li's".
+
+- In plaats van de pijlen als afbeeldingen in de "li's" plaatsen, is het efficiënter om ::after te gebruiken.
+ 
+- Het blijkt lastiger te zijn dan gedacht om een "clip path" op de ::after van een heading te zetten. Yunus heeft aangegeven om hier later op terug te komen.
+ 
+- Yunus heeft de code van zijn Apple website gedeeld om te laten zien hoe hij daar de uit en inklapbare blokken tekst heeft geprogrammeerd.
+ 
+- Mede door Yunus is het Shae daarnaast ook gelukt om de datum weer te geven op haar website. 
 
 </details>
 
@@ -245,7 +250,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ## Eindgesprek (week 5)
 
-<details>
+<details open>
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
