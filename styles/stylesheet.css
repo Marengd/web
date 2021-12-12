@@ -7,7 +7,7 @@
 
 
 
-/* Css
+/* Css */
 
 
 
@@ -22,15 +22,14 @@
 
 
 /* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
-/* ░░░░░░░░░░░░░░░                   ░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░   Document   ░░░░░░░░░░░░░░░░░░░ */
 /* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
 
 
 /* █████████████████████████████████████████████████ */
-/* ████████████████                 ████████████████ */
+/* █████████████████  Algemeen  ████████████████████ */
 /* █████████████████████████████████████████████████ */
 
-/* CSS Document */
 *, *::after, *::before {  
   box-sizing:border-box;  
 }
@@ -50,12 +49,12 @@ body {
 
 
 /* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
-/* ░░░░░░░░░░░░░░░░░░░            ░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░  Kleur  ░░░░░░░░░░░░░░░░░░░░░ */
 /* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
 
 
 /* █████████████████████████████████████████████████ */
-/* ████████████████                 ████████████████ */
+/* █████████████████  Standaard  ███████████████████ */
 /* █████████████████████████████████████████████████ */
 
 
@@ -100,54 +99,10 @@ body {
 
   --indicator-color: #E42525;
   --indicator-background-color: #fa9b9b;
+
+  --outline-color: green;
 }
 
-
-@media (prefers-color-scheme:dark) {
-
-  :root {
-
-/* Algemeen */
-  --twix-primary-color: #490F00;
-  --twix-secondary-color:#eaaa22;
-  --twix-tertiary-color: #f7eed2;
-
-  --twix-accent-color: #f0c66c;
-
-  --twix-subcolor-1: #F9F1DB;
-  --twix-subcolor-2: #f7eed2;
-  --twix-subcolor-3: #f4f4f4;
-
-  --orange: #e64d1e;
-  --white: #ffffff;
-  --black: #000000;
-
-  --twix-complementary-color: #57BDF4;
-  --twix-complementary-subcolor: #79caf6;
-
-/* Typografie */
-  --twix-primary-heading-color: #490F00;
-  --twix-secondary-heading-color: #ffffff;
-
-  --twix-primary-body-text-color: #490F00;
-  --twix-secondary-body-text-color: #ffffff;
-
-/* Interactie */
-  --twix-primary-button-ccolor: #E42525;
-  --twix-secondary-button-color: #ffffff;
-
-  --twix-primary-button-text-color: #ffffff;
-  --twix-secondary-button-text-color: #E42525;
-  --twix-tertiary-button-text-color: #490F00;
-
-  --twix-primary-body-text-color: #490F00;
-  --twix-secondary-body-text-color: #ffffff;
-
-
-  --indicator-color: #E42525;
-  --indicator-background-color: #fa9b9b;
-  }
-}  
 
 
 
@@ -186,7 +141,7 @@ body {
 
 
 /* █████████████████████████████████████████████████ */
-/* ██████████████████ Typografie ███████████████████ */
+/* ██████████████  Koppen en teksten  ██████████████*/
 /* █████████████████████████████████████████████████ */
 
 
@@ -242,7 +197,7 @@ p {
   font-family: 'ag book';
   font-size: 18px;
   
-  line-height: 28px;
+  line-height: 22px;
   text-align: center;
   
   color: var(--twix-primary-body-text-color);
@@ -285,6 +240,8 @@ border-radius: 30px;
 color: var(--twix-primary-button-text-color);
 background-image: linear-gradient(45deg, var(--twix-secondary-button-color) 50%,var(--twix-primary-button-ccolor) 50%);
 
+/* Niet naar vragen */
+
 background-position-x: 100%;
 background-position-y: 0%;
 background-size: 200% 200%;
@@ -306,6 +263,8 @@ a:hover {
 }
 
 a:focus {
+  outline-color: var(--outline-color);
+  outline-offset: .3em;
 }
 
 a:active {
@@ -365,12 +324,12 @@ div:nth-child(even) {
 
 
 /* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
-/* ░░░░░░░░░░░░░░░░░░░            ░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░  Navigatie  ░░░░░░░░░░░░░░░░░ */
 /* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
 
 
 /* █████████████████████████████████████████████████ */
-/* ████████████████                 ████████████████ */
+/* ██████████████████  Hero header █████████████████ */
 /* █████████████████████████████████████████████████ */
 
 
@@ -550,86 +509,6 @@ footer:first-of-type nav:first-of-type ul li a {
   color: var(--twix-tertiary-button-text-color);
   background-image: unset;
 }
-
-
-
-
-
-footer:last-of-type {
-  position: relative;
-
-  width: auto;
-  height: 60em;
-
-  background-color: var(--twix-primary-button-ccolor);
-}
-
-footer:last-of-type div {
-
-  width: 5em;
-
-  position: absolute;
-  top: 4em;
-
-  background-color: var(--twix-primary-button-ccolor);
-}
-
-footer:last-of-type h3 {
-  margin: 0;
-
-  font-size: 16px;
-
-
-  color: var(--twix-secondary-heading-color);
-}
-
-
-footer:last-of-type nav ul:first-of-type {
-  display: flex;
-
-  column-count: 1;
-}
-
-footer:last-of-type nav ul li a {
-  display: inline-block;
-
-  padding: 0;
-
-  font-family: 'ag book';
-  font-size: 12px;
-  font-weight: inherit;
-
-  
-  text-align: center;
-  text-transform: capitalize;
-  text-decoration: none;
-  letter-spacing: 0.5px;
-
-  border-radius: 0;
-
-  color: var(--white);
-  background-image: none;
-
-  background-position-x: none;
-  background-position-y: none;
-  background-size: none;
-
-  transition-delay: none;
-  transition-duration: none;
-  transition-property: none;
-  transition-timing-function: none;
-
-}
-
-footer:last-of-type nav p {
-  color: var(--white);
-
-  text-align: left;
-
-  font-size: 12px;
-  line-height: 1.6em;
-}
-
 
 
 
