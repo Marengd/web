@@ -267,6 +267,27 @@ main section:nth-of-type(3) article.links_invliegen {
   }
 }
 
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion */
+@media (prefers-reduced-motion) {
+  @keyframes links_invliegen {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes rechts_invliegen {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
 /* Afbeeldingen vergroten tijdens hover */
 main section:nth-of-type(3) article img:hover {
   transform: scale(1.1);
