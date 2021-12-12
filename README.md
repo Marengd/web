@@ -327,7 +327,11 @@ Hieronder nog een aantal screenshots van de twee pagina, aangezien ik deze nooit
  
 <img src="images/voortgang_5_screen_10.png" width="375px" alt="Voortgang 5"> 
  
+<br> 
+ 
 <img src="images/voortgang_5_screen_11.png" width="375px" alt="Voortgang 5"> 
+ 
+<br>
  
 <img src="images/voortgang_5_screen_12.png" width="375px" alt="Voortgang 5"> 
 
