@@ -128,8 +128,8 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Stand van zaken
 
-Na drie weken is ben ik verder gegaan met het detailleren van de pagina. Zo heb ik het beeldmerk en het menu toegevoegd aan de navigatie.
-Daarnaast heb de afbeelding van de twee Twix fabrieken opnieuw gepositioneerd met "Object-fit" en "object-position". Dit zorgt
+Na drie weken ben ik verder gegaan met het detailleren van de pagina. Zo heb ik het beeldmerk en het menu toegevoegd aan de navigatie.
+Daarnaast heb ik de afbeelding van de twee Twix fabrieken opnieuw gepositioneerd met "Object-fit" en "object-position". Dit zorgt
 ervoor de de afbeelding meeschaalt zonder dat het belangrijkste deel van de afbeelding uit het beeld verdwijnt.
 
  
@@ -137,17 +137,17 @@ ervoor de de afbeelding meeschaalt zonder dat het belangrijkste deel van de afbe
  
 Ondanks de visuele inspector blijft het af en toe lastig om bepaalde onderdelen na te maken. Over het deel van de Twix website wat
 op onderstaande afbeelding te zien is had ik zo mijn twijfels. Dankzij Sanne zijn deze twijfels omgezet tot zekerheid en hoef ik mij
-geen zorgen meer te maken over het uiterlijk tijdens het stijlen. 
+geen zorgen meer te maken over dit element.
  
 <img src="images/voortgang_2_screen_2.png" width="375px" alt="Voortgang 2">
  
-Door mijn werkwijze is het zo dat de website zelf nog niet volledig is vormgegeven, wel heb ik de één van de uitkomsten van de
+Door mijn werkwijze is het zo dat de website zelf nog niet volledig is vormgegeven, wel heb ik één van de uitkomsten uit de
 "voortgang 1 meeting" direct in mijn website verwerkt. Door een "background-attachment" toe te voegen aan de onderstaande afbeelding
 lijkt het alsof de afbeelding op zijn plek blijft staan tijdens het scrollen. 
 
 <img src="images/voortgang_2_screen_3.png" width="375px" alt="Voortgang 2">
  
-Nu dat er een goede basis staat is het tijd om de het stijlen af te ronden zodat we ons kunnen richten op de "socials", animaties en eventuele verbeteringen
+Nu dat er een goede basis staat is het tijd om het stijlen af te ronden zodat we ons kunnen richten op de "socials", animaties en eventuele verbeteringen
 aan de Twix website zelf, zodat we volgende week iets kunnen opleveren wat niet alleen af is, maar ook precies zoals we in gedachte hadden. 
 
 
@@ -177,36 +177,93 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <details>
 <summary>uitwerken na test in 8e voortgang</summary>
 
-De toegankelijkheidstest bestond uit drie onderdelen. Hoe goed de website te bedienen is met enkel het toetsenbord, hoe goed de website te gebruiken is met een screen reader en het bedienen van de website met een visuele beperking of problemen met de motoriek. In tweetallen hebben we elkaars website getest op basis van eerder genoemde punten. 
+De toegankelijkheidstest bestond uit drie onderdelen. Hoe goed de website te bedienen is met enkel het toetsenbord, hoe goed de website te gebruiken is met een screen reader en het bedienen van de website met een visuele beperking, problemen met de motoriek of met een afleiding. In tweetallen hebben we elkaars website getest op basis van eerder genoemde punten. 
+ 
+Zo heb ik de website van Coen getest, die aan de slag is gegaan met de website van Abn Amro.
  
  
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
 
  
-### Enkel navigeren met toetsenbord
  
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+### Enkel navigeren met toetsenbord 
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-### Gebruik van Screenreaders
+Outline van focus state
+Navigeren met enkel het toetsenbord ging over het algemeen erg goed, vooral omdat je zelf denk ik weinig hoeft toe te voegen als je HTML en CSS net in elkaar zitten. Uit de test is wel naar voren gekomen dat de outline van de focus state weg valt op het blauwe blok.
  
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+<img src="images/voortgang_2_screen_1.png" width="375px" alt="Voortgang 2">
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Dit zou simpelweg opgelost kunnen worden door de outline van de focus state een opvallende kleur te geven, alleen gaat dat dan wat ten koste van de vormgeving. 
+ 
+<img src="images/voortgang_2_screen_1.png" width="375px" alt="Voortgang 2">
+
  
  
-### Het web met een beperking
+
+### Gebruik van Screenreaders ###
  
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Onverstaanbare uitspraak
+Wat mij opviel tijdens het gebruik van de screenreader is dat mijn systeem op het Nederlands ingesteld staat en de tekst van de website in het Engels. Hierdoor werden bepaalde woorden niet alleen verkeerd uitgesproken, maar ook nog eens onverstaanbaar. 
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Ik weet eerlijk gezegd niet of het de bedoeling is dat je dit alleen oplost met de instellingen van je systeem. Maar hier is een talen functie natuurlijk ideaal voor. 
+ 
 
+#### Te snelle uitspraak
+Daarnaast was de uitspraak van alle woorden erg snel. 
+
+Nu weet ik wel dat je dit in de instellingen van je computer kan wijzigen, maar misschien is het ook mogelijk om een standaard snelheid te kunnen programmeren in je website. Zoals er richtlijnen zijn voor lettergroottes op het web, zouden richtlijnen voor screenreaders mij ook verstandig lijken.
+ 
+ 
+#### Span wordt gezien als twee onderdelen.
+Daarnaast was de uitspraak van alle woorden erg snel. 
+
+Nu weet ik wel dat je dit in de instellingen van je computer kan wijzigen, maar misschien is het ook mogelijk om een standaard snelheid te kunnen programmeren in
+je website. Zoals er richtlijnen zijn voor lettergroottes op het web, zouden richtlijnen voor screenreaders mij ook verstandig lijken.
+ 
+<img src="images/voortgang_2_screen_1.png" width="375px" alt="Voortgang 2">
+<br>
+<img src="images/voortgang_2_screen_1.png" width="375px" alt="Voortgang 2">
+ 
+Omdat ik een span heb gebruikt voor het verdelen van de tekst over twee regels ziet de screen reader dit als twee losse elementen terwijl ze wel gegroepeerd zijn als je met je toetsenbord door de website navigeert. 
+ 
+Aangezien dit de enige manier is waarop ik de tekst over twee regels weet te verdelen, heb ik hier helaas geen oplossing voor kunnen vinden. 
+ 
+ 
+
+### Het web met een beperking ###
+ 
+#### Weinig preciesie
+Wat mij meteen opviel tijdens het simuleren van de ziekte van Parkinson is dat het vrijwel onmogelijk is om ergens precies te kunnen klikken. Mochten er dus meerdere elementen dicht op elkaar staan, zal je waarschijnlijk eerder op het verkeerde element klikken. 
+
+Dit zou je tijdens het vormgeven van de website kunnen oplossen door elementen verder uit elkaar te plaatsen. 
+ 
+ 
+#### Liever geen kleine bewegingen
+Het kan natuurlijk ook aan het apparaat liggen wat we hebben gebruikt, maar hoe kleiner de beweging was die ik moest maken op bijvoorbeeld op een "tekst knop" te kunnen klikken hoe meer last ik van mijn arm kreeg. Na een aantal pogingen merkte ik ook dat ik langzaam gefrustreerd raakte. 
+ 
+Een idee is om dit soort kleine knoppen zoveel mogelijk te vermijden. Knoppen met tekst en ruimte eromheen had ik namelijk geen problemen mee. 
+ 
+ 
+ 
+### Teksten moeilijk te lezen
+Ook hebben we verschillende visuele beperkingen gesimuleerd. Één daarvan was volgens mij een waas in het zicht. Opvallend was dat het navigeren door de website 
+nog wel redelijk ging, de teksten waren te lezen. Alleen kon ik moeilijk het onderscheid maken tussen de witte blokken met een kleine grijze ruimte daartussen.
+ 
+Een idee is om kleurcombinaties zoals wit op licht grijs te vermijden. En bijvoorbeeld gewoon een lijn om het blok heen te plaatsen of het contrast te verhogen.
+ 
+ 
+### Website schuin bekijken
+Een andere visuele beperking was de "zwarte waas" in het midden van je zicht. Verschrikkelijk, aangezien je automatisch je hoofd draait of kantelt om vanuit je ooghoeken te kunnen kijken. 
+ 
+Afhankelijk van hoe groot het deel is wat nog wel te zien is vanuit je ooghoek. Denk ik dat het een goed idee is om de gebruiker de mogelijkheid te geven om het contrast te kunnen verhogen. Daarnaast is het denk ik ook goed als de gebruiker de tekst kan vergroten zonder dat de website zelf volledig instort. 
+ 
+
+<img src="images/voortgang_2_screen_1.png" width="375px" alt="Voortgang 2">
+<br>
+<img src="images/voortgang_2_screen_1.png" width="375px" alt="Voortgang 2">
+
+ 
 </details>
 
 
@@ -323,7 +380,7 @@ Het programmeren van de tweede pagina heeft mijn gedachte over het gemak van HTM
  
 Een voorbeeld is hoe zij waarschijnlijk een afbeelding van een cirkel handmatig achter bepaalde blokken hebben moeten plaatsen, terwijl je met een aantal regels CSS aan kan geven dat de cirkel als 'radial gradient' achter de blokken één drie en vijf moeten, aangezien dit oneven getallen zijn en je zo het zelfde effect creërt.
  
-Hieronder nog een aantal screenshots van de twee pagina, aangezien ik deze nooit eerder heb laten zien in het procesverslag.
+Hieronder nog een aantal screenshots van de tweede pagina, aangezien ik deze nooit eerder heb laten zien in het procesverslag.
  
 <img src="images/voortgang_5_screen_10.png" width="375px" alt="Voortgang 5"> 
  
