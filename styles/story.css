@@ -21,21 +21,6 @@
 
 
 
-
-
-
-
-
-/* Bezig met opschonen ... */
-
-
-
-
-
-
-
-
-
 /* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
 /* ░░░░░░░░░░░░░░░                   ░░░░░░░░░░░░░░░ */
 /* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
@@ -46,41 +31,28 @@
 /* █████████████████████████████████████████████████ */
 
 
-
-
-
-
-
-
-
-/* ██████████████████████████████████████████████████ */
-/* ██████████████ Header, Linker Blok ███████████████ */
-/* ██████████████████████████████████████████████████ */
-
-
 header article {
+  z-index: 50;
+  
+  position: absolute;
+
+  top: calc(15% - 1em);
+  left: calc(50% - 12.5em);
 
   text-align: center;
 
-  position: absolute;
+  width: 25em;
 
-  top: calc(20% - 1em);
-  left: 1em;
-
-  z-index: 50;
 }
 
 header article h1, h4 {
   font-family: 'twix';
-  color: var(--dark-background-color);
+  color: var(--twix-primary-heading-color);
 }
 
-
-
-/* ██████████████████████████████████████████████████ */
-/* ████████ Header, Achtergrond Afbeelding ██████████ */
-/* ██████████████████████████████████████████████████ */
-
+header article h1 {
+  text-transform: capitalize;
+}
 
 header > img {
   width: 100%;
@@ -94,30 +66,30 @@ header > img {
 
 
 
+
+
+
+
+
 /* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
 /* ░░░░░░░░░░░░░░                    ░░░░░░░░░░░░░░░ */
 /* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
 
 
+/* █████████████████████████████████████████████████ */
+/* █████████████  Section 1, container  ████████████ */
+/* █████████████████████████████████████████████████ */
 
 
-
-/* ██████████████████████████████████████████████████ */
-/* █████████████                       ██████████████ */
-/* ██████████████████████████████████████████████████ */
-
-
-/* Container, witte blok bruine tekst */
 main section:first-of-type {
   display: flex;
   justify-content: center;
 
 }
 
-/* ██████████████████████████████████████████████████ */
-/* ██████████████ Section 1 , Content ███████████████ */
-/* ██████████████████████████████████████████████████ */
-
+/* █████████████████████████████████████████████████ */
+/* ███████████     Section 1, inhoud     ███████████ */
+/* █████████████████████████████████████████████████ */
 
 main section:first-of-type h3 {
   max-width: 17em;
@@ -145,6 +117,16 @@ main section:first-of-type h3 {
 /* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
 
 
+/* █████████████████████████████████████████████████ */
+/* █████████████  Section 2, container  ████████████ */
+/* █████████████████████████████████████████████████ */
+
+/* >:) */
+
+/* █████████████████████████████████████████████████ */
+/* ███████████     Section 2, inhoud     ███████████ */
+/* █████████████████████████████████████████████████ */
+
 main section:nth-of-type(2) article {
   height: 40em;
 
@@ -153,26 +135,28 @@ main section:nth-of-type(2) article {
   justify-content: center;
 }
 
+main section:nth-of-type(2) article h2 {
+  font-family: 'glowworm';
+  font-size: 40px;
+  font-weight: inherit;
 
-main section:nth-of-type(2) article:nth-child(odd) {
-  margin-left: 3em;
+  text-transform: uppercase;
 
-  background-image: 
-  radial-gradient(circle at center 32%,var(--accent-background-color) 39%, transparent 35%),
-  radial-gradient(var(--white), var(--white));
+  max-width: 11em;
 
-  background-position: -2em;
+  padding: 0;
+  margin: .2em 0 0 0;
+
+  color: var(--twix-primary-heading-color);
 }
 
-main section:nth-of-type(2) article:nth-child(even) {
-  margin-left: 1.5em;
+main section:nth-of-type(2) p {
+  text-align: left;
+
+  max-width: 23em;
+
+  color: var(--twix-primary-body-text-color);
 }
-
-main section:nth-of-type(2) article:nth-child(even) img {
-  width: 85%;
-}
-
-
 
 main section:nth-of-type(2) article img {
   height: 16em;
@@ -180,43 +164,44 @@ main section:nth-of-type(2) article img {
   order: -1;
 }
 
-main section:nth-of-type(2) article h2 {
-  max-width: 11em;
+/* Van alle articles in de main, krijgen de oneven genummerde een cirkel als achtergrond */
+main section:nth-of-type(2) article:nth-child(odd) {
+  margin-left: 3em;
 
-  padding: 0;
-  margin: .2em 0 0 0;
+  background-image: 
+  radial-gradient(circle at center 32%,var(--twix-tertiary-color) 39%, transparent 35%),
+  radial-gradient(var(--white), var(--white));
 
-  font-family: 'glowworm';
-  font-size: 40px;
-  font-weight: inherit;
-
-  color: var(--dark-background-color);
-
-  line-height: 42px;
-  letter-spacing: 0.5px;
-
-  text-align: left;
-  text-transform: uppercase;
+  background-position: -2em;
 }
 
-/* Stijling, body tekst */
-main section:nth-of-type(2) p {
-  max-width: 23em;
-
-  font-family: 'ag book';
-  font-size: 18px;
-  font-weight: inherit;
-
-  color: var(--dark-background-color);
-
-  line-height: 30px;
-  letter-spacing: 0.5px;
-
-  text-align: left;
-  text-transform: unset;
-
-
+/* Van alle articles in de main, hebben de even genummerde ruimte aan de linkerkant */
+main section:nth-of-type(2) article:nth-child(even) {
+  margin-left: 1.5em;
 }
+
+/* Van alle articles in de main, neemt de afbeelding 85% in de breedte van zijn geheel */
+main section:nth-of-type(2) article:nth-child(even) img {
+  width: 85%;
+}
+
+
+
+
+
+
+
+
+
+
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░                    ░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+
+
+/* █████████████████████████████████████████████████ */
+/* █████████████  Section 3, container  ████████████ */
+/* █████████████████████████████████████████████████ */
 
 
 main section:nth-of-type(3) {
@@ -226,45 +211,33 @@ main section:nth-of-type(3) {
   display: flex;
   align-items: center;
 
-  position: relative;
-
 }
 
+/* █████████████████████████████████████████████████ */
+/* ███████████     Section 3, inhoud     ███████████ */
+/* █████████████████████████████████████████████████ */
+
 main section:nth-of-type(3) article {
-  position: absolute;
+  z-index: 50;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  z-index: 99;
 }
 
 main section:nth-of-type(3) article h3 {
-  font-family: 'twix';
   font-size: 14px;
-  letter-spacing: 0.5px;
-
-  text-transform: uppercase;
   
-  color: var(--white);
+  color: var(--twix-secondary-heading-color);
 }
 
 main section:nth-of-type(3) article h2 {
   font-family: 'glowworm';
-  font-size: 40px;
-
-  letter-spacing: 0.5px;
 }
 
 main section:nth-of-type(3) article p {
-
-  color: var(--white);
-  font-family: 'ag book';
-  font-size: 18px;
-
-  letter-spacing: 0.5px;
+  color: var(--twix-secondary-body-text-color);
 }
 
 main section:nth-of-type(3) > img {
@@ -288,9 +261,14 @@ main section:nth-of-type(3) > img {
 
 
 
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░                    ░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
 
 
-
+/* █████████████████████████████████████████████████ */
+/* █████████████  Section 4, container  ████████████ */
+/* █████████████████████████████████████████████████ */
 
 
 main section:nth-of-type(4) {
@@ -306,25 +284,22 @@ main section:nth-of-type(4) {
   text-transform: uppercase;
   text-align: center;
 
-  border-bottom: .3em solid var(--button-background-color);
-  background-color: var(--accent-background-color);
+  border-bottom: .3em solid var(--indicator-color);
+  background-color: var(--twix-tertiary-color);
 }
 
-
+/* █████████████████████████████████████████████████ */
+/* ███████████     Section 4, inhoud     ███████████ */
+/* █████████████████████████████████████████████████ */
 
 main section:nth-of-type(4) h2 {
   font-family: 'glowworm';
 
-  color: var(--dark-background-color);
-
   margin-bottom: 3em;
+
+  color: var(--twix-primary-heading-color);
 }
 
-
-/* ▲▲▲▲▲▲ */
-
-
-/*  ▶ ▶ Container, Article */
 main section:nth-of-type(4) article {
   display: flex;
   flex-direction: column;
@@ -333,24 +308,21 @@ main section:nth-of-type(4) article {
 }
 
 main section:nth-of-type(4) article p {
-  font-family: 'ag book';
   font-size: 16px;
 
-  letter-spacing: 0.5px;
   text-transform: lowercase;
 }
 
-/*  ▶ ▶ Afbeeldingen Linker en rechter Twix */
 main section:nth-of-type(4) article img {
   order: -1;
 
   width: 22em;
   height: auto;
 
-  transition: all .4s ease-in-out; 
+  transition: .4s ease-in-out; 
 }
 
-/*  ▶ ▶ Afbeeldingen vergroten, hover */
+/* Afbeeldingen vergroten tijdens hover */
 main section:nth-of-type(4) article img:hover {
   transform: scale(1.1);
 }
@@ -360,31 +332,27 @@ main section:nth-of-type(4) article span {
   display: block;
 }
 
-/*  ▶ ▶ Klikbare titels, Left Right Twix products */
+/* Klikbare titels */
 main section:nth-of-type(4) article a:first-of-type {
-  display: inline-block;
-
   font-size: 20px;
-  letter-spacing: 0.5px;
 
   text-align: center;
   text-transform: uppercase;
 
-  color: var(--dark-background-color);
+  color: var(--twix-tertiary-button-text-color);
   background-color: transparent;
   background-image: none;
 
-  margin: 2em 0 1.5em 0;
-  padding: 0;
+  margin: .5em 0 .5em 0;
 }
 
-/*  ▶ ▶ Klikbare titels kleuren rood, hover */
+/* Titels kleuren rood tijdens hover */
 main section:nth-of-type(4) article a:first-of-type:hover {
-  color: var(--button-background-color);
+  color: var(--twix-secondary-button-text-color);
 }
 
 
-/*  ▶ ▶ Klikbare rode knoppen, Explore */
+/* Rode knoppen */
 main section:nth-of-type(4) article a:last-of-type {
   margin-bottom: 5em;
 }
@@ -392,35 +360,53 @@ main section:nth-of-type(4) article a:last-of-type {
 
 
 
-main section:nth-of-type(5) {
 
+
+
+
+
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░                    ░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+
+
+/* █████████████████████████████████████████████████ */
+/* █████████████  Section 5, container  ████████████ */
+/* █████████████████████████████████████████████████ */
+
+
+main section:nth-of-type(5) {
   display: flex;
   align-items: center;
 
   height: 20em;
 
   background-image: 
-  radial-gradient(circle at right 37%,var(--accent-twix-color) 25%, transparent 25%),
-  radial-gradient(var(--accent-background-color), var(--accent-background-color));
+  radial-gradient(circle at right 37%,var(--twix-accent-color) 25%, transparent 25%),
+  radial-gradient(var(--twix-tertiary-color), var(--twix-tertiary-color));
 }
+
+/* █████████████████████████████████████████████████ */
+/* ███████████     Section 5, inhoud     ███████████ */
+/* █████████████████████████████████████████████████ */
 
 main section:nth-of-type(5) article {
   margin-left: 1.5em;
 }
 
 main section:nth-of-type(5) h2 {
-  margin: 0;
-
   font-family: 'twix';
   font-size: 28px;
   text-transform: uppercase;
 
-  color: var(--dark-background-color);
+  margin: 0;
+
+  color: var(--twix-primary-heading-color);
 }
 
 main section:nth-of-type(5) p{
   text-align: left;
-  color: var(--dark-background-color);
+  color: var(--twix-primary-body-text-color);
 
   margin-bottom: 3em;
 }

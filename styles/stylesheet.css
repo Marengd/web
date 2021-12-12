@@ -21,21 +21,6 @@
 
 
 
-
-
-
-
-/* Bezig met opschonen ... */
-
-
-
-
-
-
-
-
-
-
 /* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
 /* ░░░░░░░░░░░░░░░                   ░░░░░░░░░░░░░░░ */
 /* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
@@ -50,53 +35,120 @@
   box-sizing:border-box;  
 }
 
-
 body {
-  margin: 0;
-
   overflow-x:hidden;
+  margin: 0;
 }
 
 
 
+
+
+
+
+
+
+
 /* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
-/* ░░░░░░░░░░░░░░░░░░░ Properties ░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░            ░░░░░░░░░░░░░░░░░░ */
 /* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+
+
+/* █████████████████████████████████████████████████ */
+/* ████████████████                 ████████████████ */
+/* █████████████████████████████████████████████████ */
+
 
 :root {
-	--white:#ffffff;
-  --accent-grey:#F9F1DB;
-  --grey:#F4F4F4;
-	--black:#000000;
+
+/* Algemeen */
+  --twix-primary-color: #490F00;
+  --twix-secondary-color:#eaaa22;
+  --twix-tertiary-color: #f7eed2;
+
+  --twix-accent-color: #f0c66c;
+
+  --twix-subcolor-1: #F9F1DB;
+  --twix-subcolor-2: #f7eed2;
+  --twix-subcolor-3: #f4f4f4;
 
   --orange: #e64d1e;
+  --white: #ffffff;
+  --black: #000000;
 
-  --dark-blue: blue;
+  --twix-complementary-color: #57BDF4;
+  --twix-complementary-subcolor: #79caf6;
 
-	--button-background-color:#E42525;
-  --accent-button-background-color: #E62B1E;
+/* Typografie */
+  --twix-primary-heading-color: #490F00;
+  --twix-secondary-heading-color: #ffffff;
 
+  --twix-primary-body-text-color: #490F00;
+  --twix-secondary-body-text-color: #ffffff;
 
+/* Interactie */
+  --twix-primary-button-ccolor: #E42525;
+  --twix-secondary-button-color: #ffffff;
 
+  --twix-primary-button-text-color: #ffffff;
+  --twix-secondary-button-text-color: #E42525;
+  --twix-tertiary-button-text-color: #490F00;
 
-  --dark-background-color:#490F00;
-  --background-color:#eaaa22;
-  --accent-background-color:#f7eed2;
-
-  --accent-twix-color: #f0c66c;
-
-  --overlay-background-color:#57BDF4;
-  --overlay-accent-color: #79caf6;
+  --twix-primary-body-text-color: #490F00;
+  --twix-secondary-body-text-color: #ffffff;
 
 
   --indicator-color: #E42525;
   --indicator-background-color: #fa9b9b;
-
 }
 
-/**********************************************/
-/************* Algemene stijling *************/
-/********************************************/
+
+@media (prefers-color-scheme:dark) {
+
+  :root {
+
+/* Algemeen */
+  --twix-primary-color: #490F00;
+  --twix-secondary-color:#eaaa22;
+  --twix-tertiary-color: #f7eed2;
+
+  --twix-accent-color: #f0c66c;
+
+  --twix-subcolor-1: #F9F1DB;
+  --twix-subcolor-2: #f7eed2;
+  --twix-subcolor-3: #f4f4f4;
+
+  --orange: #e64d1e;
+  --white: #ffffff;
+  --black: #000000;
+
+  --twix-complementary-color: #57BDF4;
+  --twix-complementary-subcolor: #79caf6;
+
+/* Typografie */
+  --twix-primary-heading-color: #490F00;
+  --twix-secondary-heading-color: #ffffff;
+
+  --twix-primary-body-text-color: #490F00;
+  --twix-secondary-body-text-color: #ffffff;
+
+/* Interactie */
+  --twix-primary-button-ccolor: #E42525;
+  --twix-secondary-button-color: #ffffff;
+
+  --twix-primary-button-text-color: #ffffff;
+  --twix-secondary-button-text-color: #E42525;
+  --twix-tertiary-button-text-color: #490F00;
+
+  --twix-primary-body-text-color: #490F00;
+  --twix-secondary-body-text-color: #ffffff;
+
+
+  --indicator-color: #E42525;
+  --indicator-background-color: #fa9b9b;
+  }
+}  
+
 
 
 
@@ -108,10 +160,6 @@ body {
 /* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
 /* ░░░░░░░░░░░░░░░░░░░ Typografie ░░░░░░░░░░░░░░░░░░ */
 /* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
-
-
-
-
 
 
 /* █████████████████████████████████████████████████ */
@@ -142,6 +190,11 @@ body {
 /* █████████████████████████████████████████████████ */
 
 
+h1, h2, h3, h4, p, a {
+  font-weight: inherit;
+
+}
+
 h3, h4, p, a {
   letter-spacing: 0.5px;
 }
@@ -150,57 +203,54 @@ h3, h4, p, a {
 h1 {
   font-family: 'Glowworm';
   font-size: 40px;
-  font-weight: inherit;
 
   text-transform: uppercase;
 
-  color: white;
+  color: var(--twix-secondary-heading-color);
 }
 
 h2 {
   font-family: 'Twix';
   font-size: 40px;
-  font-weight: inherit;
   
-  line-height: 40px;
   
-  color: var(--white);
+  color: var(--twix-secondary-heading-color);
 }
 
 h3 {
   font-family: 'Twix';
   font-size: 22px;
-  font-weight: inherit;
   text-transform: uppercase;
   
   line-height: 26px;
   
-  color: var(--dark-background-color);
+  color: var(--twix-primary-heading-color);
 }
 
 h4 {
   font-family: 'Twix';
   font-size: 14px;
-  font-weight: inherit;
   
   line-height: 26px;
 
   text-transform: uppercase;
   
-  color: var(--white);
+  color: var(--twix-secondary-heading-color);
 }
 
-
 p {
-  font-family: Ag book;
+  font-family: 'ag book';
   font-size: 18px;
-  font-weight: inherit;
   
   line-height: 28px;
   text-align: center;
   
-  color: var(--dark-background-color);
+  color: var(--twix-primary-body-text-color);
 }
+
+
+
+
 
 
 
@@ -210,8 +260,6 @@ p {
 /* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
 /* ░░░░░░░░░░░░░░░░░░░ Interactie ░░░░░░░░░░░░░░░░░░ */
 /* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
-
-
 
 
 /* ██████████████████████████████████████████████████ */
@@ -234,8 +282,8 @@ letter-spacing: 1.6px;
 
 border-radius: 30px;
 
-color: var(--white);
-background-image: linear-gradient(45deg, var(--white) 50%,var(--button-background-color) 50%);
+color: var(--twix-primary-button-text-color);
+background-image: linear-gradient(45deg, var(--twix-secondary-button-color) 50%,var(--twix-primary-button-ccolor) 50%);
 
 background-position-x: 100%;
 background-position-y: 0%;
@@ -253,7 +301,7 @@ transition-timing-function: cubic-bezier(0.75, 0, 0.25, 0);
 
 
 a:hover {
-  color: var(--accent-button-background-color);
+  color: var(--twix-secondary-button-text-color);
   background-position: 0;
 }
 
@@ -261,24 +309,36 @@ a:focus {
 }
 
 a:active {
-  background-position: 0;
+  color: var( --twix-secondary-body-text-color);
+  background-image: linear-gradient(45deg, var(--twix-primary-button-ccolor) 50%,var(--twix-secondary-button-color) 50%);
 }
-
-/* Focus toevoegen. */
-/* Activate toevoegen. */
-/* Visited toevoegen. */
 
 button {
   border: none;
   background: none;
-}
 
-button:hover {
   cursor: pointer;
 }
 
 
-/* Driehoekige dingetjes die op Twixjes lijken. */
+
+
+
+
+
+
+
+
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░    Stijl    ░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+
+
+/* ██████████████████████████████████████████████████ */
+/* ██████████████████████ Vormen ████████████████████ */
+/* ██████████████████████████████████████████████████ */
+
+
 div:nth-child(even) {
   width: 7em;
   height: 8em;
@@ -286,7 +346,7 @@ div:nth-child(even) {
   margin-top: -12em;
   margin-bottom: 4em;
 
-  background-color: var(--background-color);
+  background-color: var(--twix-secondary-color);
 
   clip-path: polygon(0% 100%, 10% 90%, 20% 100%,
   30% 90%, 40% 100%, 
@@ -299,13 +359,24 @@ div:nth-child(even) {
 
 
 
-/* Header die overal hetzelfde is. */
+
+
+
+
+
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░            ░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+
+
+/* █████████████████████████████████████████████████ */
+/* ████████████████                 ████████████████ */
+/* █████████████████████████████████████████████████ */
 
 
 header {
-  height: 30em;
+  height: 35em;
 }
-
 
 
 header nav {
@@ -323,7 +394,7 @@ header nav {
   display: flex;
   justify-content: space-between;
 
-  background-image: radial-gradient(var(--accent-grey), var(--background-color));
+  background-image: radial-gradient(var(--twix-subcolor-1), var(--twix-secondary-color));
 }
 
 header nav.uitschuiven{
@@ -332,40 +403,52 @@ header nav.uitschuiven{
 
 
 /* Knoppen */
-header nav button {
+header nav > a {
   position: absolute;
-
   top: 1.8em;
+
+  padding: 0;
+
+  background-image: none;
+
+  cursor: pointer;
+}
+
+header nav > a:active {
+  background-image: none;
 }
 
 /* Twix logo  */
-header nav button:first-of-type {
+header nav > a:first-of-type {
   left: 1em;
 }
 
-header nav button img {
+header nav > a img {
   height: 2.4em;
 }
 
 /* Hamburger menu */
-header nav button:last-of-type {
+header nav button {
+  position: absolute;
+
   right: 1em;
+  top: 1.8em;
   
   font-size: 16px;
   font-family: 'Twix';
 
-  color: var(--dark-background-color);
+  color: var(--twix-tertiary-button-text-color);
 }
 
-header nav button:last-of-type::before {
+header nav button::before {
   content: '☰';
 
   font-size: 20px; 
 
-  color: var(--button-background-color);
+  color: var(--twix-secondary-button-text-color);
 }
 
-/* ✕ */
+
 header nav ul {
   visibility: hidden;
 
@@ -395,12 +478,157 @@ header nav ul li a{
   text-transform: capitalize;
   text-decoration: none;
 
-  color: var(--dark-background-color);
+  color: var(--twix-tertiary-button-text-color);
 
   background-image: none;
 }
 
+header nav ul li a:active {
+  background-image: none;
+}
 
+
+
+/* ██████████████████████████████████████████████████ */
+/* ███████████████ Footer, Container ████████████████ */
+/* ██████████████████████████████████████████████████ */
+
+
+footer:first-of-type {
+  position: relative;
+
+  width: auto;
+  height: 16em;
+
+  background-image: radial-gradient(var(--twix-subcolor-1), var(--twix-secondary-color));
+}
+
+footer:first-of-type nav {
+  position: absolute;
+  left: 2em;
+  top: 3em;
+}
+
+footer nav button {
+  padding: 0;
+
+  margin-bottom: 2em;
+}
+
+footer nav button img {
+  width: 6em;
+  height: auto;
+}
+
+footer nav ul{
+  padding: 0;
+
+  column-count: 2;
+  list-style-type: none;
+}
+
+footer nav ul li {
+  margin: 0 0 1.5em 0;
+}
+
+footer:first-of-type nav:first-of-type ul li a {
+  display: inline-block;
+
+  padding: 0;
+
+  font-family: 'twix';
+  font-size: 16px;
+  font-weight: inherit;
+  
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  letter-spacing: 1.6px;
+
+  border-radius: 0;
+
+  color: var(--twix-tertiary-button-text-color);
+  background-image: unset;
+}
+
+
+
+
+
+footer:last-of-type {
+  position: relative;
+
+  width: auto;
+  height: 60em;
+
+  background-color: var(--twix-primary-button-ccolor);
+}
+
+footer:last-of-type div {
+
+  width: 5em;
+
+  position: absolute;
+  top: 4em;
+
+  background-color: var(--twix-primary-button-ccolor);
+}
+
+footer:last-of-type h3 {
+  margin: 0;
+
+  font-size: 16px;
+
+
+  color: var(--twix-secondary-heading-color);
+}
+
+
+footer:last-of-type nav ul:first-of-type {
+  display: flex;
+
+  column-count: 1;
+}
+
+footer:last-of-type nav ul li a {
+  display: inline-block;
+
+  padding: 0;
+
+  font-family: 'ag book';
+  font-size: 12px;
+  font-weight: inherit;
+
+  
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+
+  border-radius: 0;
+
+  color: var(--white);
+  background-image: none;
+
+  background-position-x: none;
+  background-position-y: none;
+  background-size: none;
+
+  transition-delay: none;
+  transition-duration: none;
+  transition-property: none;
+  transition-timing-function: none;
+
+}
+
+footer:last-of-type nav p {
+  color: var(--white);
+
+  text-align: left;
+
+  font-size: 12px;
+  line-height: 1.6em;
+}
 
 
 
