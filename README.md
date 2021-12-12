@@ -325,7 +325,11 @@ Een voorbeeld is hoe zij waarschijnlijk een afbeelding van een cirkel handmatig 
  
 Hieronder nog een aantal screenshots van de twee pagina, aangezien ik deze nooit eerder heb laten zien in het procesverslag.
  
-<img src="images/voortgang_5_screen_8.png" width="375px" alt="Voortgang 5"> 
+<img src="images/voortgang_5_screen_10.png" width="375px" alt="Voortgang 5"> 
+ 
+<img src="images/voortgang_5_screen_11.png" width="375px" alt="Voortgang 5"> 
+ 
+<img src="images/voortgang_5_screen_12.png" width="375px" alt="Voortgang 5"> 
 
 </details>
 
