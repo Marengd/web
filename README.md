@@ -299,12 +299,17 @@ Daarnaast heb ik ook geëxperimenteerd met onderdelen die me interessant leken u
  
 <img src="images/voortgang_5_screen_3.png" width="375px" alt="Voortgang 5">
  
+<img src="images/voortgang_5_screen_9.png" width="375px" alt="Voortgang 5">
+ 
  Daarnaast heb ik ook geëxperimenteerd met onderdelen die me interessant leken uit de gegeven lijst voor de surface plane. Zo heb ik bijvoorbeeld gebruik gemaakt van de IntersectionObserver, om dit blok een kleine oppepper te geven, maar vraag ik me nog steeds af of ik dit wel goed heb aangepakt.
  
 <img src="images/voortgang_5_screen_4.png" width="375px" alt="Voortgang 5">
  
  Een ander onderdeel waar ik erg trots op ben is het blok in de afbeelding hieronder, deze animatie is tot in detail uitgewerkt. Daarnaast is het geluid wat afgespeeld wordt tijdens het hoveren een leuke toevoeging. 
+ 
 <img src="images/voortgang_5_screen_5.png" width="375px" alt="Voortgang 5">
+ 
+<img src="images/voortgang_5_screen_8.png" width="375px" alt="Voortgang 5"> 
  
 Het was een enorme uitdaging, één die ik tot de dag van vandaag niet los kan laten, aangezien het detail die het geheel vormt ontbreekt. Daarnaast heb ik dit doel enkel kunnen bereiken door het combineren van andermans werk, waar ik uiteraard de bronnen van heb vermeld. Maar ondanks dat ik het niet volledig zelf heb weten te creëren geeft het een voldoening zodra ik de knoppen gebruik om te scrollen en daarnaast zie hoe de "indicator" meebeweegt.
  
