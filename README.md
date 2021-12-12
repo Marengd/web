@@ -289,9 +289,15 @@ hier screenshot(s) van je eindresultaat
  
 <img src="images/voortgang_5_screen_1.png" width="375px" alt="Voortgang 5">
  
+ Zo zullen er vast een aantal elementen zijn die afwijken van de Twix website zelf, aangezien ik hier en daar ook mijn eigen inbreng heb proberen te verwerken in de website. 
+ 
 <img src="images/voortgang_5_screen_2.png" width="375px" alt="Voortgang 5">
  
+ Ik heb bewust voor de website van Twix gekozen zodat het niet zou storen als ik animaties zou toevoegen aan de website, nu had ik eerlijk gezegd nog wat animaties toe willen voegen, maar daar ben ik helaas niet meer aan toegekomen. Wel heb ik de bestaande animaties netter kunnen programmeren door bijvoorbeeld geen afbeeldingen te positioneren, maar gebruik te maken van 'gradients'.
+ 
 <img src="images/voortgang_5_screen_3.png" width="375px" alt="Voortgang 5">
+ 
+ Daarnaast heb ik ook ge¨
  
 <img src="images/voortgang_5_screen_4.png" width="375px" alt="Voortgang 5">
  
