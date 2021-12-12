@@ -190,7 +190,7 @@ Lijst met je bevindingen die in de test naar voren kwamen:
 ### Enkel navigeren met toetsenbord 
 
 Outline van focus state
-Navigeren met enkel het toetsenbord ging over het algemeen erg goed, vooral omdat je zelf denk ik weinig hoeft toe te voegen als je HTML en CSS net in elkaar zitten. Uit de test is wel naar voren gekomen dat de outline van de focus state weg valt op het blauwe blok.
+Navigeren met enkel het toetsenbord ging over het algemeen erg goed, vooral omdat je zelf denk ik weinig hoeft toe te voegen als je HTML en CSS net in elkaar zitten. Uit de test is wel naar voren gekomen dat de outline van de focus state wegvalt op het blauwe blok.
  
 <img src="images/test_1_1.png" width="375px" alt="Toegankelijkheid">
 
@@ -204,7 +204,7 @@ Dit zou simpelweg opgelost kunnen worden door de outline van de focus state een 
 ### Gebruik van Screenreaders ###
  
 #### Onverstaanbare uitspraak
-Wat mij opviel tijdens het gebruik van de screenreader is dat mijn systeem op het Nederlands ingesteld staat en de tekst van de website in het Engels. Hierdoor werden bepaalde woorden niet alleen verkeerd uitgesproken, maar ook nog eens onverstaanbaar. 
+Wat mij opviel tijdens het gebruik van de screenreader is dat mijn taal op het Nederlands ingesteld staat en de tekst van de website in het Engels geschreven is. Hierdoor werden bepaalde woorden niet alleen verkeerd uitgesproken, maar af en toe ook nog eens onverstaanbaar. 
 
 Ik weet eerlijk gezegd niet of het de bedoeling is dat je dit alleen oplost met de instellingen van je systeem. Maar hier is een talen functie natuurlijk ideaal voor. 
  
@@ -216,14 +216,9 @@ Nu weet ik wel dat je dit in de instellingen van je computer kan wijzigen, maar 
  
  
 #### Span wordt gezien als twee onderdelen.
-Daarnaast was de uitspraak van alle woorden erg snel. 
-
-Nu weet ik wel dat je dit in de instellingen van je computer kan wijzigen, maar misschien is het ook mogelijk om een standaard snelheid te kunnen programmeren in
-je website. Zoals er richtlijnen zijn voor lettergroottes op het web, zouden richtlijnen voor screenreaders mij ook verstandig lijken.
+Omdat ik een span heb gebruikt voor het verdelen van de tekst over twee regels ziet de screen reader dit als twee losse elementen terwijl ze wel gegroepeerd zijn als je met je toetsenbord door de website navigeert. 
  
 <img src="images/test_1_3.png" width="375px" alt="Toegankelijkheid">
- 
-Omdat ik een span heb gebruikt voor het verdelen van de tekst over twee regels ziet de screen reader dit als twee losse elementen terwijl ze wel gegroepeerd zijn als je met je toetsenbord door de website navigeert. 
  
 Aangezien dit de enige manier is waarop ik de tekst over twee regels weet te verdelen, heb ik hier helaas geen oplossing voor kunnen vinden. 
  
@@ -234,11 +229,11 @@ Aangezien dit de enige manier is waarop ik de tekst over twee regels weet te ver
 #### Weinig preciesie
 Wat mij meteen opviel tijdens het simuleren van de ziekte van Parkinson is dat het vrijwel onmogelijk is om ergens precies te kunnen klikken. Mochten er dus meerdere elementen dicht op elkaar staan, zal je waarschijnlijk eerder op het verkeerde element klikken. 
 
-Dit zou je tijdens het vormgeven van de website kunnen oplossen door elementen verder uit elkaar te plaatsen. 
+Dit zou je tijdens het vormgeven van de website kunnen oplossen door elementen verder uit elkaar te plaatsen of door meerdere klikbare elementen naar dezelfde pagina te leiden. 
  
  
 #### Liever geen kleine bewegingen
-Het kan natuurlijk ook aan het apparaat liggen wat we hebben gebruikt, maar hoe kleiner de beweging was die ik moest maken op bijvoorbeeld op een "tekst knop" te kunnen klikken hoe meer last ik van mijn arm kreeg. Na een aantal pogingen merkte ik ook dat ik langzaam gefrustreerd raakte. 
+Het kan natuurlijk ook aan het apparaat liggen wat we hebben gebruikt, maar hoe kleiner de beweging was die ik moest maken om bijvoorbeeld op een "tekst knop" te kunnen klikken, hoe meer last ik van mijn arm kreeg. Na een aantal pogingen merkte ik ook dat ik langzaam gefrustreerd raakte. 
  
 Een idee is om dit soort kleine knoppen zoveel mogelijk te vermijden. Knoppen met tekst en ruimte eromheen had ik namelijk geen problemen mee. De knoppen vergroten is natuurlijk ook een optie, of in ieder geval de klikbare ruimte.
  
