@@ -688,7 +688,7 @@ main section:nth-of-type(7) button {
 
 main section:nth-of-type(7) button:first-of-type {
   left: 1em;
-  background-image:url('/icons/twix_arrow_left.svg');
+  background-image:url('../icons/twix_arrow_left.svg');
 
   visibility: hidden;
 }
@@ -701,7 +701,7 @@ main section:nth-of-type(7) button:first-of-type.zichtbaar {
 
 main section:nth-of-type(7) button:last-of-type {
   right: 1em;
-  background-image:url('/icons/twig_arrow_right.svg');
+  background-image:url('../icons/twig_arrow_right.svg');
 }
 
 
