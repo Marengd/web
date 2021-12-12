@@ -1,0 +1,733 @@
+
+
+
+
+
+
+
+
+
+/* Css */
+
+
+
+
+
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░       Home       ░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+
+
+
+
+
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░   Blok links met knop   ░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+
+
+/* █████████████████████████████████████████████████ */
+/* █████████  Header article, container  ███████████ */
+/* █████████████████████████████████████████████████ */
+
+
+header article {
+  z-index: 50;
+
+  position: absolute;
+
+  top: 25%;
+  left: 1em;
+}
+
+/* █████████████████████████████████████████████████ */
+/* ███████████  Header article, inhoud  ████████████ */
+/* █████████████████████████████████████████████████ */
+
+header article h1 { 
+  max-width: 6em;
+}
+
+/* Achtergrond afbeelding */
+header > img {
+  width: 100%;
+  height: 100%;
+  
+  filter: brightness(50%);
+
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+
+
+
+
+
+
+
+
+
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░   Witte blok, bruine tekst   ░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+
+
+/* █████████████████████████████████████████████████ */
+/* █████████████  Section 1, container  ████████████ */
+/* █████████████████████████████████████████████████ */
+
+main section:first-of-type {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  width: auto;
+  height: 15em;
+
+  background-color: var(--white);
+}
+
+/* █████████████████████████████████████████████████ */
+/* ███████████     Section 1, inhoud     ███████████ */
+/* █████████████████████████████████████████████████ */
+
+main section:first-of-type p {
+  max-width: 25em;
+}
+
+
+
+
+
+
+
+
+
+
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░   Blauwe blok, lichte cirkels   ░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+
+
+/* █████████████████████████████████████████████████ */
+/* █████████████  Section 2, container  ████████████ */
+/* █████████████████████████████████████████████████ */
+
+main section:nth-of-type(2) {
+  /* position: relative; */
+  display: flex;
+
+  height: 40em;
+
+  background-color: var(--twix-complementary-color);
+
+  /* Styling cirkels op achtergrond */
+  background-image: 
+    radial-gradient(circle at center 37%,var(--twix-complementary-subcolor) 25%, transparent 25%),
+    radial-gradient(circle at center 37%,var(--twix-complementary-subcolor) 25%, transparent 25%);
+
+  background-size: 60em 27em, 40em 27em;
+
+  background-position: .5em bottom, right 1em;
+
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* █████████████████████████████████████████████████ */
+/* ███████████     Section 2, inhoud     ███████████ */
+/* █████████████████████████████████████████████████ */
+
+main section:nth-of-type(2) article {
+  z-index: 50;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 1.5em;
+}
+
+main section:nth-of-type(2) article img{
+  width: 16em;
+  height: 16em;
+
+  order: -1;
+
+  align-self: center;
+
+	animation: zweven 6s ease-in-out infinite;
+}
+
+@keyframes zweven {
+	0% {
+		transform: translatey(20%);
+	}
+	50% {
+		transform: translatey(-10%);
+	}
+	100% {
+		transform: translatey(20%);
+	}
+}
+
+main section:nth-of-type(2) article a {
+  align-self: flex-start;
+}
+
+
+
+
+
+
+
+
+
+
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░   Beige blok, producten   ░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+
+
+/* ██████████████████████████████████████████████████ */
+/* █████████████ Section 3, container ███████████████ */
+/* ██████████████████████████████████████████████████ */
+
+main section:nth-of-type(3) {
+  width: auto;
+
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+
+  background-color: var(--twix-tertiary-color);
+}
+
+/* █████████████████████████████████████████████████ */
+/* ███████████     Section 3, inhoud     ███████████ */
+/* █████████████████████████████████████████████████ */
+
+main section:nth-of-type(3) h2 {
+  font-family: 'glowworm';
+
+  text-transform: uppercase;
+
+  color: var(--twix-primary-heading-color);
+
+  margin-bottom: 3em;
+}
+
+main section:nth-of-type(3) article {
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+}
+
+main section:nth-of-type(3) article img {
+  order: -1;
+
+  width: 22em;
+  height: auto;
+
+
+  transition: .4s ease-in-out; 
+}
+
+main section:nth-of-type(3) article.rechts_invliegen {
+	animation: rechts_invliegen .8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+@keyframes rechts_invliegen {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+main section:nth-of-type(3) article.links_invliegen {
+	animation: links_invliegen .8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+@keyframes links_invliegen {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Afbeeldingen vergroten tijdens hover */
+main section:nth-of-type(3) article img:hover {
+  transform: scale(1.1);
+}
+
+/* Zodat de woorden Left en Right op een aparte regel komen */
+main section:nth-of-type(3) article span {
+  display: block;
+}
+
+/* Klikbare titels */
+main section:nth-of-type(3) article a:first-of-type {
+  font-size: 20px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--twix-tertiary-button-text-color);
+  background-image: none;
+
+  margin: .5em 0 .5em 0;
+}
+
+/* Titels kleuren rood tijdens hover */
+main section:nth-of-type(3) article a:first-of-type:hover {
+  color: var(--twix-secondary-button-text-color);
+}
+
+
+/* Rode knoppen */
+main section:nth-of-type(3) article a:last-of-type {
+  margin-bottom: 3em;
+}
+
+
+
+
+
+
+
+
+
+
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░   Afbeelding, gele blok op midden   ░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+
+
+/* ██████████████████████████████████████████████████ */
+/* ██████████████ Section 4, container ██████████████*/
+/* ██████████████████████████████████████████████████ */
+
+main section:nth-of-type(4) {
+  position: relative;
+
+  height: 55em;
+
+  text-align: center;
+}
+
+/*  ▶ ▶ Achtergrond afbeelding */
+main section:nth-of-type(4) > img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: 50%;
+
+  filter: brightness(60%);
+}
+
+/* ██████████████████████████████████████████████████ */
+/* ██████████████ Section 4, inhoud █████████████████ */
+/* ██████████████████████████████████████████████████ */
+
+main section:nth-of-type(4) article {
+  z-index: 50;
+
+  position: absolute;
+}
+
+main section:nth-of-type(4) article:first-of-type a {
+  color: var(--twix-secondary-button-text-color);
+  background-image: linear-gradient(45deg, var(--twix-secondary-button-color) 50%,var(--twix-secondary-button-color) 50%);
+}
+
+/* Omgekeerde hover voor witte knop */
+main section:nth-of-type(4) article:first-of-type a:hover {
+  color: var(--twix-primary-button-text-color);
+  background-image: linear-gradient(45deg, var(--twix-primary-button-ccolor) 50%,var(--twix-secondary-button-color) 50%);
+}
+
+
+
+/* Gele blok met Twix afbeelding */
+main section:nth-of-type(4) article:last-of-type {
+  top: 18em;
+  right: calc(50% - 10em);
+  left: calc(50% - 10em);
+
+  width: 21em;
+  height: 33em;
+
+  border-radius: 1.2em;
+
+  --center-color: var(--twix-accent-color);
+  --inner-color: var(--twix-subcolor-1);
+  --outer-color: var(--twix-secondary-color);
+
+  
+  background-image: 
+    radial-gradient(circle at center 37%,var(--center-color) 25%, transparent 25%),
+    radial-gradient(var(--inner-color), var(--outer-color));
+
+    transition: --center-color 1s ease-in-out;
+}
+
+
+/* Gele blok met Twix afbeelding kleurt rood bij hover */
+main section:nth-of-type(4) article:last-of-type.opvullen-achtergrond{
+  --center-color: var(--orange);
+  --inner-color: var(--twix-primary-button-ccolor);
+  --outer-color: var(--twix-primary-button-ccolor);
+}
+
+@property --center-color {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: transparent;
+}
+
+@property --inner-color {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: transparent;
+}
+
+@property --outer-color {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: transparent;
+}
+
+main section:nth-of-type(4) article:last-of-type h4 {
+  color: var(--twix-primary-heading-color);
+
+  transition: 1s ease-in-out;
+}
+
+/* Kleine titel licht op bij hover over het gehele blok */
+main section:nth-of-type(4) article:last-of-type h4.oplichten-kleine {
+  color: var(--twix-secondary-heading-color);
+
+  transition: 1s;
+}
+
+main section:nth-of-type(4) article:last-of-type img {
+  width: 16em;
+  height: 16em;
+
+  transition: 1s ease-in-out;
+}
+
+/* Twix afbeelding vergroot bij hover over het gehele blok */
+main section:nth-of-type(4) article:last-of-type img.vergroten {
+  transform: scale(1.1);
+}
+
+main section:nth-of-type(4) article:last-of-type h3 {
+  font-size: 22px;
+  text-align: center;
+  text-transform: none;
+
+  margin: 0 2em 2em 2em;
+
+  transition: 1s ease-in-out;
+}
+
+/* Grote titel licht op bij hover over het gehele blok */
+main section:nth-of-type(4) article:last-of-type h3.oplichten-grote {
+  color: var(--twix-secondary-heading-color);
+  
+  transition: 1s;
+}
+
+main section:nth-of-type(4) article:last-of-type a {
+  position: relative;
+  top: 2em;
+}
+
+main section:nth-of-type(4) article:last-of-type a.oplichten {
+  color: var(--twix-secondary-button-text-color);
+  background-image: linear-gradient(45deg, var(--twix-secondary-button-color) 50%,var(--twix-secondary-button-color) 50%);
+}
+
+
+
+
+
+
+
+
+
+
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░   Beige blok, recepten   ░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+
+
+/* ██████████████████████████████████████████████████ */
+/* █████████████ Section 5, container ███████████████ */
+/* ██████████████████████████████████████████████████ */
+
+main section:nth-of-type(5) {
+  width: auto;
+  height: 75em;
+
+  background-color: var(--twix-tertiary-color);
+}
+
+
+/* ██████████████████████████████████████████████████ */
+/* ███████████████ Section 5, inhoud ████████████████ */
+/* ██████████████████████████████████████████████████ */
+
+main section:nth-of-type(5) h2 {
+  font-family: 'glowworm';
+
+  text-transform: uppercase;
+  text-align: center;
+
+  padding-top: 2em;
+  
+  margin: 0 0 3em 0;
+
+  color: var(--twix-primary-heading-color);
+}
+
+/*  ▶ ▶ Positie driehoeken omhoogstaand. */
+main section:nth-of-type(5) div {
+  position: absolute;
+  left: calc(50% - 4em);
+}
+
+main section:nth-of-type(5) article {
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  align-items: center;
+}
+
+main section:nth-of-type(5) article img {
+  width: 22em;
+  height: auto;
+
+  order: -1;
+  transition: all .4s ease-in-out; 
+}
+
+/*  ▶ ▶ Afbeeldingen vergroten, hover */
+main section:nth-of-type(5) article img:hover {
+  transform: scale(1.1);
+}
+
+main section:nth-of-type(5) article h3 {
+  margin: 1em 0 .1em 0;
+}
+
+main section:nth-of-type(5) article p {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 22px;
+
+  margin: 1em 0 1em 0;
+}
+
+main section:nth-of-type(5) article a {
+  margin-bottom: 4em;
+}
+
+
+
+
+
+
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░   Scrollende Twix afbeelding   ░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+
+
+/* ██████████████████████████████████████████████████ */
+/* █████████████ Section 6, container ███████████████ */
+/* ██████████████████████████████████████████████████ */
+
+main section:nth-of-type(6) {
+  min-height: 25em;
+  min-width: 30em;
+
+  margin: 0;
+  padding: 0;
+
+  background-image: url("../images/twix_reep_met_hartjes.jpeg");
+  background-repeat: no-repeat;
+  background-position: 35%;
+  background-size: auto 60em;
+
+  background-attachment: fixed;
+}
+
+/* ██████████████████████████████████████████████████ */
+/* ███████████████ Section 6, inhoud ████████████████ */
+/* ██████████████████████████████████████████████████ */
+
+/* 🍫  */
+
+
+
+
+
+
+
+
+
+
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░   Socials, carousel   ░░░░░░░░░░░░░░ */
+/* ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ */
+
+
+/* ██████████████████████████████████████████████████ */
+/* █████████████ Section 7 , Container ██████████████ */
+/* ██████████████████████████████████████████████████ */
+
+main section:nth-of-type(7) {
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  background-color: var(--twix-tertiary-color);
+  height: 34em;
+}
+
+/* ██████████████████████████████████████████████████ */
+/* ███████████████ Section 7, inhoud ████████████████ */
+/* ██████████████████████████████████████████████████ */
+
+main section:nth-of-type(7) > div {
+  position: absolute;
+
+  top: 11.5em;
+  align-self: center;
+}
+
+main section:nth-of-type(7) h2 {
+  position: relative;
+
+  font-family: 'glowworm';
+
+  text-transform: uppercase;
+  text-align: center;
+
+  color: var(--twix-primary-heading-color);
+}
+
+main section:nth-of-type(7) ul {
+  display: flex;
+  padding: 20px 0;
+
+  list-style: none;
+
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+/* Uitschakelen scrollbar */
+main section:nth-of-type(7) ul::-webkit-scrollbar {
+    display: none;
+  }
+
+  main section:nth-of-type(7) ul li {
+    width: 17em;
+    height: 17em
+}
+
+main section:nth-of-type(7) ul li a {
+  background-image: unset;
+}
+
+main section:nth-of-type(7) ul li a img {
+
+  width: 18em;
+  height: 18em;
+
+  border-radius: .8em;
+
+}
+
+
+main section:nth-of-type(7) button {
+  position: absolute;
+  top: calc(55% - 1em);
+
+  width: 4em;
+  height: 4em;
+
+  margin: 0;
+  padding: 0;
+
+  border-radius: 3em;
+
+  color: var(--twix-secondary-button-text-color);
+  background-color: var(--twix-secondary-button-color);
+}
+
+
+main section:nth-of-type(7) button:first-of-type {
+  left: 1em;
+  background-image:url('../icons/twix_arrow_left.svg');
+
+  visibility: hidden;
+}
+
+main section:nth-of-type(7) button:first-of-type.zichtbaar {
+  visibility: unset;
+}
+
+
+
+main section:nth-of-type(7) button:last-of-type {
+  right: 1em;
+  background-image:url('../icons/twig_arrow_right.svg');
+}
+
+
+/* Achtergrond indicator */
+
+.scroll-tray {
+  overflow: hidden;
+
+  height: 0.3em;
+  margin: 1em auto;
+  width: 14em;
+
+  border-radius: 1em;
+
+  background-color: var(--indicator-background-color);
+}
+
+/* Indicator */
+
+.scroll-indicator {
+  background-color: var(--indicator-color);
+  height: 0.3em;
+  position: relative;
+  width: 1em;
+
+  border-radius: 1em;
+  background-color: var(--indicator-color);
+}
+
