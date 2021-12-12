@@ -293,7 +293,9 @@ hier screenshot(s) van je eindresultaat
  
 <img src="images/voortgang_5_screen_2.png" width="375px" alt="Voortgang 5">
  
- Ik heb bewust voor de website van Twix gekozen zodat het niet zou storen als ik animaties zou toevoegen aan de website, nu had ik eerlijk gezegd nog wat animaties toe willen voegen, maar daar ben ik helaas niet meer aan toegekomen. Wel heb ik de bestaande animaties netter kunnen programmeren door bijvoorbeeld geen afbeeldingen te positioneren, maar gebruik te maken van 'gradients'.
+Ik heb bewust voor de website van Twix gekozen zodat het niet zou storen als ik animaties zou toevoegen aan de website, nu had ik eerlijk gezegd nog wat animaties toe willen voegen, maar daar ben ik helaas niet meer aan toegekomen. Wel heb ik de bestaande animaties netter kunnen programmeren door bijvoorbeeld geen afbeeldingen te positioneren, maar gebruik te maken van 'gradients'.
+ 
+Daarnaast heb ik ook geëxperimenteerd met onderdelen die me interessant leken uit de gegeven lijst voor de surface plane. Zo heb ik bijvoorbeeld gebruik gemaakt van de IntersectionObserver, om dit blok een kleine oppepper te geven, maar vraag ik me nog steeds af of ik dit wel goed heb aangepakt.
  
 <img src="images/voortgang_5_screen_3.png" width="375px" alt="Voortgang 5">
  
