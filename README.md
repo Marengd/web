@@ -192,11 +192,11 @@ Lijst met je bevindingen die in de test naar voren kwamen:
 Outline van focus state
 Navigeren met enkel het toetsenbord ging over het algemeen erg goed, vooral omdat je zelf denk ik weinig hoeft toe te voegen als je HTML en CSS net in elkaar zitten. Uit de test is wel naar voren gekomen dat de outline van de focus state weg valt op het blauwe blok.
  
-<img src="images/voortgang_2_screen_1.png" width="375px" alt="Voortgang 2">
+<img src="images/test_1_1.png" width="375px" alt="Toegankelijkheid">
 
 Dit zou simpelweg opgelost kunnen worden door de outline van de focus state een opvallende kleur te geven, alleen gaat dat dan wat ten koste van de vormgeving. 
  
-<img src="images/voortgang_2_screen_1.png" width="375px" alt="Voortgang 2">
+<img src="images/test_1_2.png" width="375px" alt="Toegankelijkheid">
 
  
  
@@ -221,9 +221,7 @@ Daarnaast was de uitspraak van alle woorden erg snel.
 Nu weet ik wel dat je dit in de instellingen van je computer kan wijzigen, maar misschien is het ook mogelijk om een standaard snelheid te kunnen programmeren in
 je website. Zoals er richtlijnen zijn voor lettergroottes op het web, zouden richtlijnen voor screenreaders mij ook verstandig lijken.
  
-<img src="images/voortgang_2_screen_1.png" width="375px" alt="Voortgang 2">
-<br>
-<img src="images/voortgang_2_screen_1.png" width="375px" alt="Voortgang 2">
+<img src="images/test_1_3.png" width="375px" alt="Toegankelijkheid">
  
 Omdat ik een span heb gebruikt voor het verdelen van de tekst over twee regels ziet de screen reader dit als twee losse elementen terwijl ze wel gegroepeerd zijn als je met je toetsenbord door de website navigeert. 
  
@@ -242,8 +240,7 @@ Dit zou je tijdens het vormgeven van de website kunnen oplossen door elementen v
 #### Liever geen kleine bewegingen
 Het kan natuurlijk ook aan het apparaat liggen wat we hebben gebruikt, maar hoe kleiner de beweging was die ik moest maken op bijvoorbeeld op een "tekst knop" te kunnen klikken hoe meer last ik van mijn arm kreeg. Na een aantal pogingen merkte ik ook dat ik langzaam gefrustreerd raakte. 
  
-Een idee is om dit soort kleine knoppen zoveel mogelijk te vermijden. Knoppen met tekst en ruimte eromheen had ik namelijk geen problemen mee. 
- 
+Een idee is om dit soort kleine knoppen zoveel mogelijk te vermijden. Knoppen met tekst en ruimte eromheen had ik namelijk geen problemen mee. De knoppen vergroten is natuurlijk ook een optie, of in ieder geval de klikbare ruimte.
  
  
 ### Teksten moeilijk te lezen
@@ -259,9 +256,9 @@ Een andere visuele beperking was de "zwarte waas" in het midden van je zicht. Ve
 Afhankelijk van hoe groot het deel is wat nog wel te zien is vanuit je ooghoek. Denk ik dat het een goed idee is om de gebruiker de mogelijkheid te geven om het contrast te kunnen verhogen. Daarnaast is het denk ik ook goed als de gebruiker de tekst kan vergroten zonder dat de website zelf volledig instort. 
  
 
-<img src="images/voortgang_2_screen_1.png" width="375px" alt="Voortgang 2">
+<img src="images/test_1_4.png" width="375px" alt="Toegankelijkheid">
 <br>
-<img src="images/voortgang_2_screen_1.png" width="375px" alt="Voortgang 2">
+<img src="images/test_1_5.png" width="375px" alt="Toegankelijkheid">
 
  
 </details>
