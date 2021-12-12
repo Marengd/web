@@ -280,11 +280,9 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-Na vier weken meerdere malen geconfronteerd te zijn met de moeilijkheidsgraad van het programmeren kan ik trots zijn op wat ik heb neergezet. Ondanks mijn twijfel over hoe ik bepaalde elementen van de Twix website heb uitgewerkt.
+Na vier weken meerdere malen geconfronteerd te zijn met de hoge moeilijkheidsgraad van het programmeren kan ik trots zijn op wat ik heb neergezet. Ondanks mijn twijfel over hoe ik bepaalde elementen van de Twix website heb uitgewerkt.
  
  
-
-
 ### Screenshot(s)
 
 hier screenshot(s) van je eindresultaat
@@ -302,7 +300,18 @@ hier screenshot(s) van je eindresultaat
 Het was een enorme uitdaging, één die ik tot de dag van vandaag niet los kan laten, aangezien het detail die het geheel vormt ontbreekt. Daarnaast heb ik dit doel enkel kunnen bereiken door het combineren van andermans werk, waar ik uiteraard de bronnen van heb vermeld. Maar ondanks dat ik het niet volledig zelf heb weten te creëren geeft het een voldoening zodra ik de knoppen gebruik om te scrollen en daarnaast zie hoe de "indicator" meebeweegt.
  
 <img src="images/voortgang_5_screen_6.png" width="375px" alt="Voortgang 5">
+
+Zo heeft al dit programmeren me aan het denken gezet.
  
+<img src="images/voortgang_5_screen_7.png" width="375px" alt="Voortgang 5"> 
+ 
+Het programmeren van de tweede pagina heeft mijn gedachte over het gemak van HTML en CSS volledig doen veranderen. Waar Sanne zijn kennis natuurlijk een grote rol speelt bij wat er allemaal te realiseren valt, had ik het gevoel dat ik efficiënter bezig was dan degene die de website voor Twix in elkaar hebben gezet.
+ 
+Een voorbeeld is hoe zij waarschijnlijk een afbeelding van een cirkel handmatig achter bepaalde blokken hebben moeten plaatsen, terwijl je met een aantal regels CSS aan kan geven dat de cirkel als 'radial gradient' achter de blokken één drie en vijf moeten, aangezien dit oneven getallen zijn en je zo het zelfde effect creërt.
+ 
+Hieronder nog een aantal screenshots van de twee pagina, aangezien ik deze nooit eerder heb laten zien in het procesverslag.
+ 
+<img src="images/voortgang_5_screen_8.png" width="375px" alt="Voortgang 5"> 
 
 </details>
 
